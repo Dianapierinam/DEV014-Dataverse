@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/fondo_de_harry_potter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos para el encabezado */
+header {
+    
+    text-align: center;
+    padding: 10px 0;
+}
+
+.titulo img {
+    max-width: 400px; /* Ajusta el tamaño máximo según sea necesario */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    text-align: left;
+    width: 80%;
+    padding-left: 100px;
+    margin-top: -20px;
+    background-color:  #FFBD59;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 20px;
+    font-family: Roboto Condensed;
+    margin-left: 80px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FFBD59;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFBD59;
+    padding: 10px 0;
+}
+
+.nav li ul li {
+    display: block;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav li ul a:hover {
+    background-color:#383C37;
+}
+
+button {
+    background-color: #383C37; 
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Ajusta el tamaño del botón */
+    border-radius: 20px;
+    position: absolute; /* Posición absoluta para poder colocarlo en la esquina superior derecha */
+    top: 153px; /* Ajusta la posición vertical */
+    right: 150px; /* Ajusta la posición horizontal */
+    font-family: Roboto Condensed;
+}
+
+button:hover {
+    background-color: green; 
+}
