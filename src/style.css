@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+* {
+   font-family: "Merienda", cursive;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.background {
+   position: absolute;
+   z-index: -1;
+   cursor: url('cursor/varita-magica.png'), auto;
+}
+
+.background img {
+   width: 100vw; /* vw = view width - el ancho de la pantalla */
+   height: 100vh; /* vh = view height - el alto de la pantalla */
+   object-fit: cover;
+}
+
+/* Estilos para el encabezado */
+header {
+   text-align: center;
+   padding: 10px 0;
+}
+
+.titulo img {
+   max-width: 250px; /* Ajusta el tamaño máximo según sea necesario */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+   text-align: left;
+   width: 80%;
+   padding: 20px 80px;
+   margin-top: -20px;
+   background-color:  #d3a625;
+   border-radius: 20px;
+   height: 50px;
+   font-size: 20px;
+   margin: auto;
+}
+
+.menu {
+   list-style: none;
+   margin-top: 0px;
+}
+.menu li {
+   display: inline-block;
+   position: relative;
+}
+.menu li a {
+   display: block;
+   padding: 10px 20px;
+   text-decoration: none;
+   color: white;
+}
+.menu li ul {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: #444;
+   padding: 10px 0;
+}
+.menu li ul li {
+   display: block;
+}
+.menu li:hover > ul {
+   display: block;
+}
+.menu li ul a {
+   color: white;
+   padding: 8px 16px;
+   text-decoration: none;
+   display: block;
+}
+.menu li ul a:hover {
+   background-color:#383C37;
+   color: #d3a625;
+}
+button {
+   background-color: #444; /* Color de fondo amarillo */
+   color: white;
+   border: none;
+   padding: 15px 20px; /* Ajusta el tamaño del botón */
+   border-radius: 20px; /* Bordes redondeados */
+   cursor: pointer;
+}
+/* Estilos adicionales para el botón cuando se le pasa el ratón por encima */
+button:hover {
+   background-color: white; /* Cambia el color de fondo al pasar el ratón */
+   color: #444;
+}
+
+.btn-filtro {
+   float: right;
+}
+
+.galeria {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; /* Añade espacio entre las columnas */
+}
+
+.galeria div {
+   flex: 1 0 30%; /* El 30% asegura tres columnas en una fila */
+   margin: 10px; /* Espacio entre las imágenes */
+}
+
+.galeria img {
+   max-width: 100%; /* Las imágenes se ajustarán al ancho del contenedor */
+   display: block; /* Elimina espacios no deseados debajo de las imágenes */
+   border-radius: 5px; /* Añade bordes redondeados a las imágenes */
+}
+
+
+
+
