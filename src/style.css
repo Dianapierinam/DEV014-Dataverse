@@ -3,12 +3,12 @@ body {
     padding: 0;
     background-image: url("img/fondo_de_harry_potter.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el área */
+    background-attachment: fixed;
 }
 
 /* Estilos para el encabezado */
 header {
-    
     text-align: center;
     padding: 10px 0;
 }
@@ -25,10 +25,16 @@ nav {
     margin-top: -20px;
     background-color:  #FFBD59;
     border-radius: 20px;
-    height: 50px;
+    height: 60px;
     font-size: 20px;
     font-family: Roboto Condensed;
     margin-left: 80px;
+    color: #372e29;
+    /* Estilos para centrar verticalmente */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    z-index: 1; /* Asegura que la sombra esté por encima del fondo */
 }
 
 .nav {
@@ -37,46 +43,21 @@ nav {
 
 }
 
-.nav li {
-    display: inline-block;
-    position: relative;
-    
+.nav select {
+    /* Ocultar las casillas al costado */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-.nav li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
+.casillas {
+    border: none;
+    appearance: none;
     color: white;
     background-color: #FFBD59;
-}
-
-.nav li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #FFBD59;
-    padding: 10px 0;
-}
-
-.nav li ul li {
-    display: block;
-}
-
-.nav li:hover > ul {
-    display: block;
-}
-
-.nav li ul a {
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.nav li ul a:hover {
-    background-color:#383C37;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    appearance: none;
 }
 
 button {
@@ -86,11 +67,62 @@ button {
     padding: 15px 20px; /* Ajusta el tamaño del botón */
     border-radius: 20px;
     position: absolute; /* Posición absoluta para poder colocarlo en la esquina superior derecha */
-    top: 153px; /* Ajusta la posición vertical */
+    top: 138px; /* Ajusta la posición vertical */
     right: 150px; /* Ajusta la posición horizontal */
     font-family: Roboto Condensed;
+    
 }
 
 button:hover {
     background-color: green; 
 }
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    /*display: inline-block; /* Para que la tarjeta ocupe solo el espacio necesario */
+    background-color: rgba(255, 255, 255, 0.8); /* Agrega un fondo blanco semi-transparente */
+    justify-content: space-between; 
+    flex: 0 1 calc(25% - 20px); /* Calcula el ancho de cada tarjeta (25% del contenedor) */
+    /* Otros estilos para la tarjeta... */
+    width: calc((100% - 40px) / 3); /* Calcula el ancho de la tarjeta con el margen */
+    margin-right: 20px; /* Agrega margen entre las tarjetas */
+    height: 420px; /* Altura fija para la tarjeta */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flexbox a vertical */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    text-align: center; /* Centra el texto */
+}
+
+.card img {
+    width: 100%; /* Para que la imagen ocupe todo el ancho de la tarjeta */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor sin distorsionarse */
+    border-radius: 5px;
+    /*justify-content: space-between;*/
+    width: 200px; /* Ancho fijo para la tarjeta */
+    height: 300px; /* Altura fija para la tarjeta */
+    
+}
+
+.card p {
+    margin-top: auto; /* Mueve el nombre hacia la parte superior */
+    margin-bottom: 0; /* Elimina cualquier margen inferior */
+    text-align: center; /* Centra horizontalmente el texto */
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color de texto */
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
