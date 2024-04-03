@@ -7,114 +7,111 @@
 body {
    margin: 0;
    padding: 0;
+   background-image: url("img/Fondo-Dataverse.jpeg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover; 
 }
 
-.background {
-   position: absolute;
-   z-index: -1;
-   cursor: url('cursor/varita-magica.png'), auto;
-}
-
-.background img {
-   width: 100vw; /* vw = view width - el ancho de la pantalla */
-   height: 100vh; /* vh = view height - el alto de la pantalla */
-   object-fit: cover;
-}
-
-/* Estilos para el encabezado */
 header {
    text-align: center;
    padding: 10px 0;
 }
-
 .titulo img {
-   max-width: 250px; /* Ajusta el tamaño máximo según sea necesario */
+   max-width: 400px; 
 }
 
-/* Estilos para el menú de navegación */
 nav {
    text-align: left;
    width: 80%;
-   padding: 20px 80px;
+   padding-left: 100px;
    margin-top: -20px;
-   background-color:  #d3a625;
+   background-color:  #FFBD59;
    border-radius: 20px;
    height: 50px;
    font-size: 20px;
-   margin: auto;
+   font-family: Roboto Condensed;
+   margin-left: 80px;
+   color: white;
 }
-
-.menu {
+.nav {
    list-style: none;
-   margin-top: 0px;
+   padding: 0;
 }
-.menu li {
-   display: inline-block;
-   position: relative;
+.nav select {
+   /* Ocultar las casillas al costado */
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
 }
-.menu li a {
-   display: block;
-   padding: 10px 20px;
-   text-decoration: none;
+.casillas {
+   border: none;
+   appearance: none;
    color: white;
-}
-.menu li ul {
-   display: none;
-   position: absolute;
-   top: 100%;
-   left: 0;
-   background-color: #444;
-   padding: 10px 0;
-}
-.menu li ul li {
-   display: block;
-}
-.menu li:hover > ul {
-   display: block;
-}
-.menu li ul a {
-   color: white;
-   padding: 8px 16px;
-   text-decoration: none;
-   display: block;
-}
-.menu li ul a:hover {
-   background-color:#383C37;
-   color: #d3a625;
+   background-color: #FFBD59;
+   font-family: Roboto Condensed;
+   font-size: 20px;
+   appearance: none;
 }
 button {
-   background-color: #444; /* Color de fondo amarillo */
+   background-color: #383C37;
    color: white;
    border: none;
-   padding: 15px 20px; /* Ajusta el tamaño del botón */
-   border-radius: 20px; /* Bordes redondeados */
-   cursor: pointer;
+   padding: 15px 20px; 
+   border-radius: 20px;
+   top: 153px; 
+   right: 150px; 
+   font-family: Roboto Condensed;
 }
-/* Estilos adicionales para el botón cuando se le pasa el ratón por encima */
 button:hover {
-   background-color: white; /* Cambia el color de fondo al pasar el ratón */
-   color: #444;
+   background-color: green;
+}
+.card {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   margin-bottom: 20px;
+   display: inline-block; 
+   width: 200px; 
+   background-color: rgba(255, 255, 255, 0.8); 
+}
+.card img {
+   width: 100%; 
+   height: auto;
+   border-radius: 5px;
+}
+.card p {
+   margin-top: 10px;
+   font-size: 14px;
+   overflow: hidden; 
+   max-height: 80px; 
+   line-height: 20px; 
+   color: black; 
 }
 
-.btn-filtro {
-   float: right;
+.card {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   margin-bottom: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   width: 370px;
 }
 
-.galeria {
+.cardList {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between; /* Añade espacio entre las columnas */
+   justify-content: space-between;
+   gap: 20px;
+   padding: 0px 180px;
 }
 
-.galeria div {
-   flex: 1 0 30%; /* El 30% asegura tres columnas en una fila */
-   margin: 10px; /* Espacio entre las imágenes */
-}
-
-.galeria img {
-   max-width: 100%; /* Las imágenes se ajustarán al ancho del contenedor */
-   display: block; /* Elimina espacios no deseados debajo de las imágenes */
-   border-radius: 5px; /* Añade bordes redondeados a las imágenes */
+.card img {
+   height: 500px;
+   width: 100%;
+   object-fit: cover;
 }
 
 
