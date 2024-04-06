@@ -18,53 +18,50 @@ header {
    padding: 10px 0;
 }
 .titulo img {
-   max-width: 400px; 
+   max-width: 200px; 
 }
 
 nav {
-   text-align: left;
-   width: 80%;
-   padding-left: 100px;
-   margin-top: -20px;
-   background-color:  #FFBD59;
+   text-align: center; /* Cambiamos a centrar el texto */
+   background-color: #444; /* Cambiamos el color de fondo */
    border-radius: 20px;
-   height: 50px;
-   font-size: 20px;
-   font-family: Roboto Condensed;
-   margin-left: 80px;
-   color: white;
+   padding: 10px 20px; /* Ajustamos el relleno */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
 }
-.nav {
+.navigation {
    list-style: none;
-   padding: 0;
 }
-.nav select {
-   /* Ocultar las casillas al costado */
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
+
+label {
+   padding: 8px 12px; /* Espaciado interno */
+   background-color: #444; /* Color de fondo */
+   color: white; /* Color del texto */
+   padding: 10px 20px; /* Espaciado interno */
+   border-radius: 5px; /* Bordes redondeados */
+   cursor: pointer; /* Cambiar cursor al pasar el ratón */
+}
+label:hover {
+   background-color: #740001; /* Cambiar color de fondo al pasar el ratón */
+   /* Otros estilos adicionales */
 }
 .casillas {
-   border: none;
-   appearance: none;
-   color: white;
-   background-color: #FFBD59;
-   font-family: Roboto Condensed;
-   font-size: 20px;
-   appearance: none;
+   display: inline-block; 
+   margin-right: 20px; 
+   text-decoration: none; /* Eliminar subrayado */
+   font-size: 22px; /* Tamaño de fuente */
+   transition: color 0.3s; /* Transición de color suave */
 }
 button {
-   background-color: #383C37;
+   background-color: #444; /* Color de fondo amarillo */
    color: white;
    border: none;
-   padding: 15px 20px; 
-   border-radius: 20px;
-   top: 153px; 
-   right: 150px; 
-   font-family: Roboto Condensed;
+   padding: 15px 20px; /* Ajusta el tamaño del botón */
+   border-radius: 20px; /* Bordes redondeados */
+   cursor: pointer;
 }
 button:hover {
-   background-color: green;
+   background-color: white; /* Cambia el color de fondo al pasar el ratón */
+   color: #444;
 }
 .card {
    border: 1px solid #ccc;
@@ -95,7 +92,7 @@ button:hover {
    border-radius: 5px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    padding: 10px;
-   margin-bottom: 20px;
+   margin: 20px 15px;
    background-color: rgba(255, 255, 255, 0.8);
    width: 370px;
 }
@@ -103,7 +100,6 @@ button:hover {
 .cardList {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
    gap: 20px;
    padding: 0px 180px;
 }

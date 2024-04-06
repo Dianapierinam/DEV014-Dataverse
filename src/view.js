@@ -6,13 +6,18 @@ export const renderItems = (data) => {
 
   cardListElement.classList.add('cardList');
 
+  // Verifica si el nodo 'root' tiene hijos y los elimina si existen
+  if (root.hasChildNodes()) {
+    root.innerHTML = ''; // Elimina todos los hijos del nodo 'root'
+  }
+
+
   data.forEach(personaje => { 
     const cardElement = document.createElement('li');
     const liName = document.createElement('h1');
     const liImg = document.createElement('img');
     const liDescription = document.createElement('p');
 
-    // const { name, shortDescription, imageUrl } = personaje;
 
     liName.textContent = personaje.name;
     liDescription.textContent = personaje.shortDescription;

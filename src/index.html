@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="root">
         <header>
             <h1>text</h1>
             <div class="titulo">
                 <img src="img/HP.png">
             </div>
             <nav class="navigation">
-                <label for="filtrar" class="label-filtro">Filtar por casa</label>
-                <select id="filtrar" class="casillas" name="filrarPorCasa" id="filtrarCasa">
+                <label for="filtrarCasa" class="label-filtro">Filtrar por casa</label>
+                <select id="filtrarCasa" class="casillas" name="filtrarPorCasa">
                         <option value="gryffindor">Gryffindor</option>
                         <option value="hufflepuff">Hufflepuff</option>
                         <option value="ravenclaw">Ravenclaw</option>
                         <option value="slytherin">Slytherin</option>
                         <option value="noTienenCasa">No tienen casa</option>
                 </select>
-                <label for="filtrarPorRaza" class="label-filtro">Filtar por raza</label>
-                    <select id="filtrarPorRaza" class="casillas" name="filtrarPorRaza" id="filtrarRaza">
+                <label for="filtrarPorRaza" class="label-filtro">Filtrar por raza</label>
+                    <select id="filtrarPorRaza" class="casillas" name="filtrarPorRaza">
                         <option value="sangreMestiza">Sangre mestiza</option>
                         <option value="sangreSucia">Sangre sucia</option>
                         <option value="sangrePura">Sangre pura</option>
@@ -31,15 +30,16 @@
                         <option value="semiGigante">Semi Gigante</option>
                     </select>
                 <label for="order" class="label-filtro">Ordenar</label>
-                <select id="order" class="casillas" name="num" id="filtrar3" data-testid="select-sort">
+                <select id="order" class="casillas" name="num" data-testid="select-sort">
                     <option value="asc">Nombre (A-Z)</option>
                     <option value="desc">Nombre (Z-A)</option>
                 </select>
 
-                <button data-testid="button-clear" onclick="borrarFiltros()">Borrar iltro</button>
+                <button data-testid="button-clear" onclick="borrarFiltros()">Borrar filtro</button>
             </nav>
 
         </header> 
+        <div id="root">
     </div> 
     <script src="main.js" type="module"></script>
 </body>

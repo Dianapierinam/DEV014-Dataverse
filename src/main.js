@@ -1,7 +1,30 @@
+import { filterData } from "./dataFunctions.js";
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
-//const root = document.getElementById('root'); // Asegúrate de tener un elemento con id="root" en tu HTML
 
+//constantes y variable//
+const selectFilter = document.getElementById('filtrarCasa');
+
+
+//Carga inicial//
 renderItems(data);
+
+
+//eventos//
+selectFilter.addEventListener('change',() => {
+  const newData = filterData(data,'casaDeOrigen',selectFilter.value);
+  console.log(newData);
+  renderItems(newData);
+});
+
+
+
+
+
+
+
+
+
+
 
