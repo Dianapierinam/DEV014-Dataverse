@@ -1,4 +1,4 @@
-export default [
+export default [ //todo esto es un arrey de objetos
   {
     "id": "harry_potter",
     "name": "Harry Potter",
@@ -20,7 +20,7 @@ export default [
         "imageUrl": "https://i.pinimg.com/originals/8f/9c/8d/8f9c8d8bfa9ca6b4628a5096835f8444.jpg",
         "facts": {
             "casaDeOrigen": "gryffindor",
-            "raza": "nacidaDeMuggles",
+            "raza": "sangreSucia",
             "yearOfBirth": "1979"
     },
 
@@ -72,7 +72,7 @@ export default [
     "imageUrl": "https://media.harrypotterfanzone.com/remus-lupin-prisoner-of-azkaban-portrait-2.jpg",
     "facts": {
         "casaDeOrigen": "gryffindor",
-        "raza": "hombreLobo",
+        "raza": "sangreMestiza",
         "yearOfBirth": "1960"
     },
   
@@ -137,7 +137,7 @@ export default [
     "imageUrl": "https://wallpapercave.com/wp/wp1921651.jpg",
     "facts": {
         "casaDeOrigen": "ravenclaw",
-        "raza": "sangreMestiza",
+        "raza": "sangrePura",
         "yearOfBirth": "1981"
     },
    
@@ -182,7 +182,7 @@ export default [
    
   },
   {
-    "id": "Draco_Malfoy", //cambie el link de foto
+    "id": "Draco_Malfoy", 
     "name": "Draco Malfoy",
     "shortDescription": "Slytherin arrogante",
     "description": "Draco Malfoy, un estudiante de Slytherin en Hogwarts, es conocido por ser el rival de Harry Potter. Proviene de una familia de sangre pura y fue criado con creencias de sangre purista. Aunque inicialmente fue un antagonista en la vida de Harry, Draco enfrentó conflictos internos y presiones familiares durante la Segunda Guerra Mágica. Después de la guerra, se alejó de las creencias de su familia y encontró su propio camino en el mundo mágico. Esta evolución muestra una profundidad en su personaje.",
@@ -227,7 +227,7 @@ export default [
     "description": "Alastor 'Ojoloco' Moody es una leyenda entre los aurors, conocido por su implacable persecución a los seguidores de Voldemort. Su ojo mágico, capaz de ver a través de las capas de invisibilidad y detectar engaños, lo convierte en un adversario temible para los magos oscuros. A pesar de su aspecto rudo y su reputación intimidante, Moody es un aliado valioso en la lucha contra las fuerzas del mal, enseñando a las generaciones jóvenes a enfrentar las artes oscuras con determinación y astucia",
     "imageUrl": "https://pm1.aminoapps.com/6628/ecfe1e0d9316c58d1547951992a8251da01ecc4a_00.jpg",
     "facts": {
-      "casaDeOrigen": "noAplica",
+      "casaDeOrigen": "noTienenCasa",
       "raza": "sangrePura",
       "yearOfBirth": "1940"
     },
@@ -240,8 +240,8 @@ export default [
       "description": "Dobby es un elfo doméstico excepcional, conocido por su lealtad inquebrantable a Harry Potter y su valentía para desafiar las convenciones de su propia especie. Después de ser liberado por Harry, Dobby sirve a menudo como un consejero y protector del joven mago, sacrificando su propia seguridad para salvar a sus amigos. Su devoción y sacrificio lo convierten en un ejemplo de coraje y bondad en un mundo lleno de adversidad y prejuicios. El legado de Dobby perdura más allá de su trágica muerte, recordándonos la importancia de la empatía, la valentía y la lucha por la libertad.",
       "imageUrl": "https://blogstudio.s3.amazonaws.com/retrostyler/81862ff850bbc06df3e7cd622083f52f.jpg",
       "facts": {
-        "casaDeOrigen": "noAplica",
-        "raza": "elfoDoméstico",
+        "casaDeOrigen": "noTienenCasa",
+        "raza": "sangreDeElfo",
         "yearOfBirth": "1978"
     },
    
