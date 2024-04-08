@@ -8,13 +8,13 @@
 </head>
 <body>
         <header>
-            <h1>text</h1>
             <div class="titulo">
                 <img src="img/HP.png">
             </div>
             <nav class="navigation">
                 <label for="filtrarCasa" class="label-filtro">Filtrar por casa</label>
-                <select id="filtrarCasa" class="casillas" name="filtrarPorCasa">
+                <select id="filtrarCasa" class="casillas" name="filtrarPorCasa" value="">
+                        <option value="" disabled selected>Seleccionar Casa</option>
                         <option value="gryffindor">Gryffindor</option>
                         <option value="hufflepuff">Hufflepuff</option>
                         <option value="ravenclaw">Ravenclaw</option>
@@ -23,6 +23,7 @@
                 </select>
                 <label for="filtrarPorRaza" class="label-filtro">Filtrar por raza</label>
                     <select id="filtrarPorRaza" class="casillas" name="filtrarPorRaza">
+                        <option value="" disabled selected>Seleccionar Raza</option>
                         <option value="sangreMestiza">Sangre mestiza</option>
                         <option value="sangreSucia">Sangre sucia</option>
                         <option value="sangrePura">Sangre pura</option>
@@ -35,8 +36,9 @@
                     <option value="desc">Nombre (Z-A)</option>
                 </select>
 
-                <button data-testid="button-clear" onclick="borrarFiltros()">Borrar filtro</button>
+                <button id="filterButton" data-testid="button-clear" onclick="borrarFiltros()">Borrar filtro</button>
             </nav>
+            
 
         </header> 
         <div id="root">

@@ -189,7 +189,7 @@ export default [ //todo esto es un arrey de objetos
     "imageUrl": "https://images5.fanpop.com/image/photos/25500000/Draco-Malfoy-Wallpaper-draco-malfoy-25527029-1024-768.jpg",
     "facts": {
         "casaDeOrigen": "slytherin",
-        "raza": "SangrePura",
+        "raza": "sangrePura",
         "yearOfBirth": "1980"
     },
    
@@ -215,7 +215,7 @@ export default [ //todo esto es un arrey de objetos
     "imageUrl": "https://media.harrypotterfanzone.com/professor-mcgonagall-enjoys-a-drink.jpg",
     "facts": { 
       "casaDeOrigen": "Gryffindor",
-      "raza": "SangreMestiza",
+      "raza": "sangreMestiza",
       "yearOfBirth": "1935"
     },
    
