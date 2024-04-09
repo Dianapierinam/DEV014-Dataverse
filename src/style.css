@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@font-face {
+   font-family: 'londrina';
+   src: url('fonts/Londrina_Solid/LondrinaSolid-Regular.ttf') format('truetype');
+} 
 
 
 body {
@@ -31,7 +35,7 @@ nav {
    color:white;;
    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); /* Agrega sombra al nav */
    justify-content: center;
-   font-family: 'Londrina Solid', sans-serif;
+   font-family: 'londrina';
    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
 }
 .nav {
@@ -40,17 +44,17 @@ nav {
    justify-content: center;
    color: #372e29;
 }
-.casillas {
-   border:none;
+select{
+   border: none;
    color: #372e29;
    background-color: #FFBD59;
    font-family: Roboto Condensed;
    font-size: 20px;
    appearance: none;
-   justify-content: center;
-   /*border-radius: 10px; /* Redondea los bordes de la casilla */
-   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave alrededor de la casilla */
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+   margin: 0 10px; 
 }
+
 button {
    background-color: #383C37;
    color: white;
@@ -127,6 +131,19 @@ button:hover {
    width: 100%;
    object-fit: cover;
 }
+
+p.footer{
+   background-color: #FFBD59;
+   font-size: 40px;
+   width: 100%; 
+   height: 120px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   color: white;
+   font-family: 'londrina';
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
 /* Media query para ajustar el tamaño de la fuente en el nav */
 @media screen and (max-width: 768px) {
 nav {
@@ -146,27 +163,7 @@ nav {
    color: #372e29;
 }
 
-#filtrarCasa{
-   border: none;
-   color: #372e29;
-   background-color: #FFBD59;
-   font-family: Roboto Condensed;
-   font-size: 20px;
-   appearance: none;
-   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
-   margin: 0 10px; 
-}
-#filtrarPorRaza{
-   border: none;
-   color: #372e29;
-   background-color: #FFBD59;
-   font-family: Roboto Condensed;
-   font-size: 20px;
-   appearance: none;
-   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
-   margin: 0 10px; 
-}
-#order{
+select{
    border: none;
    color: #372e29;
    background-color: #FFBD59;
@@ -182,6 +179,4 @@ nav {
    padding: 0px 20px; 
    justify-content: center;
 }
-.casillas {
-   
-}
+
