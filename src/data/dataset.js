@@ -20,7 +20,7 @@ export default [ //todo esto es un arrey de objetos
         "imageUrl": "https://i.pinimg.com/originals/8f/9c/8d/8f9c8d8bfa9ca6b4628a5096835f8444.jpg",
         "facts": {
             "casaDeOrigen": "gryffindor",
-            "raza": "nacidaDeMuggles",
+            "raza": "sangreSucia",
             "yearOfBirth": "1979"
     },
 
@@ -189,7 +189,7 @@ export default [ //todo esto es un arrey de objetos
     "imageUrl": "https://images5.fanpop.com/image/photos/25500000/Draco-Malfoy-Wallpaper-draco-malfoy-25527029-1024-768.jpg",
     "facts": {
         "casaDeOrigen": "slytherin",
-        "raza": "SangrePura",
+        "raza": "sangrePura",
         "yearOfBirth": "1980"
     },
   
@@ -227,7 +227,7 @@ export default [ //todo esto es un arrey de objetos
     "description": "Alastor 'Ojoloco' Moody es una leyenda entre los aurors, conocido por su implacable persecución a los seguidores de Voldemort. Su ojo mágico, capaz de ver a través de las capas de invisibilidad y detectar engaños, lo convierte en un adversario temible para los magos oscuros. A pesar de su aspecto rudo y su reputación intimidante, Moody es un aliado valioso en la lucha contra las fuerzas del mal, enseñando a las generaciones jóvenes a enfrentar las artes oscuras con determinación y astucia",
     "imageUrl": "https://pm1.aminoapps.com/6628/ecfe1e0d9316c58d1547951992a8251da01ecc4a_00.jpg",
     "facts": {
-      "casaDeOrigen": "noAplica",
+      "casaDeOrigen": "noTienenCasa",
       "raza": "sangrePura",
       "yearOfBirth": "1940"
     },
@@ -240,8 +240,8 @@ export default [ //todo esto es un arrey de objetos
       "description": "Dobby es un elfo doméstico excepcional, conocido por su lealtad inquebrantable a Harry Potter y su valentía para desafiar las convenciones de su propia especie. Después de ser liberado por Harry, Dobby sirve a menudo como un consejero y protector del joven mago, sacrificando su propia seguridad para salvar a sus amigos. Su devoción y sacrificio lo convierten en un ejemplo de coraje y bondad en un mundo lleno de adversidad y prejuicios. El legado de Dobby perdura más allá de su trágica muerte, recordándonos la importancia de la empatía, la valentía y la lucha por la libertad.",
       "imageUrl": "https://blogstudio.s3.amazonaws.com/retrostyler/81862ff850bbc06df3e7cd622083f52f.jpg",
       "facts": {
-        "casaDeOrigen": "noAplica",
-        "raza": "elfoDoméstico",
+        "casaDeOrigen": "noTienenCasa",
+        "raza": "sangreDeElfo",
         "yearOfBirth": "1978"
     },
   

@@ -1,22 +1,39 @@
-export const renderItems = (data) => {
-  const cardContainer = document.createElement('div'); // Crear un contenedor para las tarjetas
-  cardContainer.classList.add('card-container'); // Agregar la clase 'card-container' al contenedor
+//import * as datos from "./data/dataset.js";
 
-  data.forEach(personaje => {
-    const cardElement = document.createElement('div');
+export const renderItems = (data) => {
+  const root = document.getElementById('root');
+  const cardListElement = document.createElement('ul');
+
+  cardListElement.classList.add('cardList');
+
+  // Verifica si el nodo 'root' tiene hijos y los elimina si existen
+  if (root.hasChildNodes()) {
+    root.innerHTML = ''; // Elimina todos los hijos del nodo 'root'
+  }
+
+
+  data.forEach(personaje => { 
+    const cardElement = document.createElement('li');
+    const liName = document.createElement('h1');
     const liImg = document.createElement('img');
     const liDescription = document.createElement('p');
 
-    cardElement.textContent = personaje.name;
-    liImg.src = personaje.imageUrl;
+
+    liName.textContent = personaje.name;
     liDescription.textContent = personaje.shortDescription;
+    liImg.src = personaje.imageUrl;
+  
     cardElement.classList.add('card');
+    
     cardElement.appendChild(liImg);
+    cardElement.appendChild(liName);
     cardElement.appendChild(liDescription);
-    cardContainer.appendChild(cardElement); // Agregar la tarjeta al contenedor
+    
+    cardListElement.appendChild(cardElement);
   });
 
-  return cardContainer; // Devolver el contenedor que contiene todas las tarjetas
+  root.appendChild(cardListElement);
+  return cardListElement
 }
 
 

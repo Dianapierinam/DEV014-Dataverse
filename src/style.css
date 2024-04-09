@@ -1,128 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("img/fondo_de_harry_potter.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el área */
-    background-attachment: fixed;
+   margin: 0;
+   padding: 0;
+   background-image: url("img/fondo_de_harry_potter.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover; 
 }
 
-/* Estilos para el encabezado */
 header {
-    text-align: center;
-    padding: 10px 0;
+   text-align: center;
+   padding: 7px 0;
 }
-
 .titulo img {
-    max-width: 400px; /* Ajusta el tamaño máximo según sea necesario */
+   max-width: 400px; 
 }
 
-/* Estilos para el menú de navegación */
 nav {
-    text-align: left;
-    width: 80%;
-    padding-left: 100px;
-    margin-top: -20px;
-    background-color:  #FFBD59;
-    border-radius: 20px;
-    height: 60px;
-    font-size: 20px;
-    font-family: Roboto Condensed;
-    margin-left: 80px;
-    color: #372e29;
-    /* Estilos para centrar verticalmente */
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega sombra */
-    z-index: 1; /* Asegura que la sombra esté por encima del fondo */
+   text-align: left;
+   width: 80%;
+   padding-left: 100px;
+   margin-top: -20px;
+   background-color:  #FFBD59;
+   border-radius: 20px;
+   height: 50px;
+   font-size: 30px;
+   margin-left: 80px;
+   color:white;;
+   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); /* Agrega sombra al nav */
+   justify-content: center;
+   font-family: 'Londrina Solid', sans-serif;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
 }
-
 .nav {
-    list-style: none;
-    padding: 0;
-
+   list-style: none;
+   padding: 0;
+   justify-content: center;
+   color: #372e29;
 }
-
-.nav select {
-    /* Ocultar las casillas al costado */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
 .casillas {
-    border: none;
-    appearance: none;
-    color: white;
-    background-color: #FFBD59;
-    font-family: Roboto Condensed;
-    font-size: 20px;
-    appearance: none;
+   border:none;
+   color: #372e29;
+   background-color: #FFBD59;
+   font-family: Roboto Condensed;
+   font-size: 20px;
+   appearance: none;
+   justify-content: center;
+   /*border-radius: 10px; /* Redondea los bordes de la casilla */
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave alrededor de la casilla */
 }
-
 button {
-    background-color: #383C37; 
-    color: white;
-    border: none;
-    padding: 15px 20px; /* Ajusta el tamaño del botón */
-    border-radius: 20px;
-    position: absolute; /* Posición absoluta para poder colocarlo en la esquina superior derecha */
-    top: 138px; /* Ajusta la posición vertical */
-    right: 150px; /* Ajusta la posición horizontal */
-    font-family: Roboto Condensed;
-    
+   background-color: #383C37;
+   color: white;
+   border: none;
+   padding: 15px 20px; 
+   border-radius: 20px;
+   top: 153px; 
+   right: 150px; 
+   font-family: Roboto Condensed;
 }
-
 button:hover {
-    background-color: green; 
+   background-color: green;
+}
+.card {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   margin-bottom: 20px;
+   display: inline-block; 
+   width: 200px; 
+   background-color: rgba(255, 255, 255, 0.8); 
+   transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
+   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+   transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba al pasar el mouse sobre ella */
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.card img {
+   width: 100%; 
+   height: auto;
+   border-radius: 5px;
+
+}
+.card h1 {
+   text-align: center;
+   font-family: "Merienda", cursive;
+}
+.card p {
+   margin-top: 10px;
+   font-size: 14px;
+   overflow: hidden; 
+   max-height: 80px; 
+   line-height: 20px; 
+   color: black; 
+   text-align: center;
+   font-family: "Merienda", cursive;
+   
 }
 
 .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin-bottom: 20px;
-    /*display: inline-block; /* Para que la tarjeta ocupe solo el espacio necesario */
-    background-color: rgba(255, 255, 255, 0.8); /* Agrega un fondo blanco semi-transparente */
-    justify-content: space-between; 
-    flex: 0 1 calc(25% - 20px); /* Calcula el ancho de cada tarjeta (25% del contenedor) */
-    /* Otros estilos para la tarjeta... */
-    width: calc((100% - 40px) / 3); /* Calcula el ancho de la tarjeta con el margen */
-    margin-right: 20px; /* Agrega margen entre las tarjetas */
-    height: 420px; /* Altura fija para la tarjeta */
-    display: flex;
-    flex-direction: column; /* Cambia la dirección del flexbox a vertical */
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
-    text-align: center; /* Centra el texto */
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   margin-bottom: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   width: 300px;
+
+   
+}
+
+.cardList {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 80px;
+   padding: 0px 180px;
+   justify-content: center;
 }
 
 .card img {
-    width: 100%; /* Para que la imagen ocupe todo el ancho de la tarjeta */
-    height: 200px; /* Establece una altura fija para todas las imágenes */
-    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor sin distorsionarse */
-    border-radius: 5px;
-    /*justify-content: space-between;*/
-    width: 200px; /* Ancho fijo para la tarjeta */
-    height: 300px; /* Altura fija para la tarjeta */
-    
+   height: 300px;
+   width: 100%;
+   object-fit: cover;
+}
+/* Media query para ajustar el tamaño de la fuente en el nav */
+@media screen and (max-width: 768px) {
+nav {
+      width: 100%; 
+      padding-left: 20px; 
+      margin-left: 0;
+      text-align: center; 
+      background-color: #FFBD59;
+   }
 }
 
-.card p {
-    margin-top: auto; /* Mueve el nombre hacia la parte superior */
-    margin-bottom: 0; /* Elimina cualquier margen inferior */
-    text-align: center; /* Centra horizontalmente el texto */
-    font-size: 16px; /* Tamaño de fuente ajustado */
-    font-weight: bold; /* Texto en negrita */
-    color: black; /* Color de texto */
-}
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+.nav {
+   list-style: none;
+   padding: 0;
+   display: flex; 
+   justify-content: center;
+   color: #372e29;
 }
 
-
+#filtrarCasa{
+   border: none;
+   color: #372e29;
+   background-color: #FFBD59;
+   font-family: Roboto Condensed;
+   font-size: 20px;
+   appearance: none;
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+   margin: 0 10px; 
+}
+#filtrarPorRaza{
+   border: none;
+   color: #372e29;
+   background-color: #FFBD59;
+   font-family: Roboto Condensed;
+   font-size: 20px;
+   appearance: none;
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+   margin: 0 10px; 
+}
+#order{
+   border: none;
+   color: #372e29;
+   background-color: #FFBD59;
+   font-family: Roboto Condensed;
+   font-size: 20px;
+   appearance: none;
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+   margin: 0 10px; 
+}
+.cardList {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0px 20px; 
+   justify-content: center;
+}
+.casillas {
+   
+}

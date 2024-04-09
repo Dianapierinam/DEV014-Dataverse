@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
     <title>Harry Potter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icono.png" type="png">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="titulo">
-            <img src="img/titulo.png">
-        </div>
-        <nav class="navigation">
-            <label for="filtrar" class="label-filtro">Filtrar por casa</label>
-            <select class="casillas" name="filtrarPorCasa" id="filtrar">
-                <option value="gryffindor">Gryffindor</option>
-                <option value="hufflepuff">Hufflepuff</option>
-                <option value="ravenclaw">Ravenclaw</option>
-                <option value="slytherin">Slytherin</option>
-                <option value="noTienenCasa">No tienen casa</option>
-            </select>
-            <label for="filtrar2" class="label-filtro">Filtrar por raza</label>
-            <select class="casillas" name="filtrarPorRaza" id="filtrar2">
-                <option value="sangreMestiza">Sangre mestiza</option>
-                <option value="sangreSucia">Sangre sucia</option>
-                <option value="sangrePura">Sangre pura</option>
-                <option value="sangreDeElfo">Sangre de elfo</option>
-                <option value="semiGigante">Semi Gigante</option>
-            </select>
-            <label for="filtrar3" class="label-filtro">Ordenar</label>
-            <select class="casillas" name="num" id="filtrar3" data-testid="select-sort">
-                <option value="asc">Nombre (A-Z)</option>
-                <option value="desc">Nombre (Z-A)</option>  
-            </select>
-        </nav>
-    </header>
-    <button>Borrar filtro</button>
-    <main>
-        <div class="estadistica"> 
-            <div class="div-estadistidistica"></div>
-        </div>
-        <div class="card-container" id="root"></div> <!-- Utiliza un contenedor para las tarjetas -->
-    </main>
+        <header >
+            <div class="titulo">
+                <img src="img/titulo.png">
+            </div>
+            <h1></h1>
+            <nav class="navigation">
+                <label for="filtrarCasa" class="label-filtro">Filtrar por casa</label>
+                <select id="filtrarCasa"  name="filtrarPorCasa" value="">
+                        <option value="" disabled selected>Seleccionar Casa</option>
+                        <option value="gryffindor">Gryffindor</option>
+                        <option value="hufflepuff">Hufflepuff</option>
+                        <option value="ravenclaw">Ravenclaw</option>
+                        <option value="slytherin">Slytherin</option>
+                        <option value="noTienenCasa">No tienen casa</option>
+                </select>
+                <label for="filtrarPorRaza" class="label-filtro">Filtrar por raza</label>
+                    <select id="filtrarPorRaza"  name="filtrarPorRaza">
+                        <option value="" disabled selected>Seleccionar Raza</option>
+                        <option value="sangreMestiza">Sangre mestiza</option>
+                        <option value="sangreSucia">Sangre sucia</option>
+                        <option value="sangrePura">Sangre pura</option>
+                        <option value="sangreDeElfo">Sangre de elfo</option>
+                        <option value="semiGigante">Semi Gigante</option>
+                    </select>
+                <label for="order" class="label-filtro">Ordenar</label>
+                <select id="order"  name="num" data-testid="select-sort">
+                    <option value="asc">Nombre (A-Z)</option>
+                    <option value="desc">Nombre (Z-A)</option>
+                </select>
+
+                <button id="filterButton" data-testid="button-clear" onclick="borrarFiltros()">Borrar filtro</button>
+            </nav>
+            
+
+        </header> 
+        <div id="root">
+    </div> 
     <script src="main.js" type="module"></script>
 </body>
+<footer>Autoras: Diana Morales - Karem Aranda</footer>
 </html>
-
 
