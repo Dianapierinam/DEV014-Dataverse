@@ -6,6 +6,9 @@ export const renderItems = (data) => {
 
   cardListElement.classList.add('cardList');
 
+  //Aplicar el atributo al elemento li
+  //cardListElement.setAttribute('itemtype')
+
   // Verifica si el nodo 'root' tiene hijos y los elimina si existen
   if (root.hasChildNodes()) {
     root.innerHTML = ''; // Elimina todos los hijos del nodo 'root'
@@ -33,5 +36,6 @@ export const renderItems = (data) => {
   });
 
   root.appendChild(cardListElement);
+  return cardListElement
 }
 

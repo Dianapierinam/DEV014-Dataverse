@@ -52,6 +52,7 @@ function borrarFiltros() {
   selectFilter.value = ""; 
   selectFilterRaza.value = ""; 
   sort.value = "asc";
+  sort.value = "desc";
   
   renderItems(data); 
 }
