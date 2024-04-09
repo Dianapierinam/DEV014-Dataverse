@@ -18,6 +18,9 @@ export const renderItems = (data) => {
     const liImg = document.createElement('img');
     const liDescription = document.createElement('p');
 
+    cardElement.setAttribute('itemtype', 'Person');
+    cardElement.setAttribute('itemscope', '');
+
 
     liName.textContent = personaje.name;
     liDescription.textContent = personaje.shortDescription;
