@@ -10,7 +10,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangreMestiza",
         "yearOfBirth": "1980"
     },
-   
   },
   {
     "id": "hermione_granger",
@@ -49,7 +48,6 @@ export default [ //todo esto es un arrey de objetos
             "raza": "sangreMestiza",
             "yearOfBirth": "1881"
     },
-   
   },
   {
     "id": "severus_snape",
@@ -62,7 +60,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangreMestiza",
         "yearOfBirth": "1960"
     },
-   
   },
   {
     "id": "remus_lupin",
@@ -88,7 +85,6 @@ export default [ //todo esto es un arrey de objetos
             "raza": "sangreMestiza",
             "yearOfBirth": "1926"
     },
-   
   },
   {
     "id": "rubeus_hagrid",
@@ -101,7 +97,6 @@ export default [ //todo esto es un arrey de objetos
             "raza": "semiGigante",
             "yearOfBirth": "1928"
     },
-   
   },
   {
     "id": "sirius_black",
@@ -114,7 +109,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangrePura",
         "yearOfBirth": "1959"
     },
-   
   },
   {
     "id": "ginny_weasley", 
@@ -127,7 +121,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangrePura",
         "yearOfBirth": "1981"
     },
-   
   },
   {
     "id": "luna_lovegood",
@@ -140,7 +133,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangrePura",
         "yearOfBirth": "1981"
     },
-   
   },
   {
     "id": "neville_longbottom",
@@ -153,7 +145,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangrePura",
         "yearOfBirth": "1980"
     },
-   
   },
   {
     "id": "fred_weasley",
@@ -166,7 +157,6 @@ export default [ //todo esto es un arrey de objetos
             "raza": "sangrePura",
             "yearOfBirth": "1978"
     },
-   
   },
   {
     "id": "George_Weasley",
@@ -179,7 +169,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangrePura",
         "yearOfBirth": "1978"
     },
-   
   },
   {
     "id": "Draco_Malfoy", 
@@ -192,7 +181,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangrePura",
         "yearOfBirth": "1980"
     },
-   
   },
   {
     "id": "bellatrix_lestrange",
@@ -205,7 +193,6 @@ export default [ //todo esto es un arrey de objetos
             "raza": "sangrePura",
             "yearOfBirth": "1951"
     },
-   
   },
   {
     "id": "minerva_mcgonagall",
@@ -231,7 +218,6 @@ export default [ //todo esto es un arrey de objetos
       "raza": "sangrePura",
       "yearOfBirth": "1940"
     },
-   
   },
   {
     "id": "dobby",
@@ -244,7 +230,6 @@ export default [ //todo esto es un arrey de objetos
         "raza": "sangreDeElfo",
         "yearOfBirth": "1978"
     },
-   
   },
   {
     "id": "Molly_Weasley",
@@ -283,7 +268,6 @@ export default [ //todo esto es un arrey de objetos
       "raza": "sangrePura",
       "yearOfBirth": "1973"
     },
-   
   },
   {
     "id": "Filius_Flitwick",
@@ -309,6 +293,5 @@ export default [ //todo esto es un arrey de objetos
       "raza": "sangreMestiza",
       "yearOfBirth": "c. 1965"
     },
-   
   }
 ];

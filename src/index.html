@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-        <header>
+    <div id="root">
+        <header >
             <div class="titulo">
-                <img src="img/HP.png">
+                <img src="img/titulo.png">
             </div>
-            
+            <h1></h1>
             <nav class="navigation">
                 <label for="filtrarCasa" class="label-filtro">Filtrar por casa</label>
-                <select id="filtrarCasa" class="casillas" name="filtrarPorCasa" value="">
+                <select id="filtrarCasa"  name="filtrarPorCasa" value="">
                         <option value="" disabled selected>Seleccionar Casa</option>
                         <option value="gryffindor">Gryffindor</option>
                         <option value="hufflepuff">Hufflepuff</option>
@@ -23,7 +24,7 @@
                         <option value="noTienenCasa">No tienen casa</option>
                 </select>
                 <label for="filtrarPorRaza" class="label-filtro">Filtrar por raza</label>
-                    <select id="filtrarPorRaza" class="casillas" name="filtrarPorRaza">
+                    <select id="filtrarPorRaza"  name="filtrarPorRaza">
                         <option value="" disabled selected>Seleccionar Raza</option>
                         <option value="sangreMestiza">Sangre mestiza</option>
                         <option value="sangreSucia">Sangre sucia</option>
@@ -32,20 +33,20 @@
                         <option value="semiGigante">Semi Gigante</option>
                     </select>
                 <label for="order" class="label-filtro">Ordenar</label>
-                <select id="order" class="casillas" name="num" data-testid="select-sort">
+                <select id="order"  name="num" data-testid="select-sort">
                     <option value="asc">Nombre (A-Z)</option>
                     <option value="desc">Nombre (Z-A)</option>
                 </select>
 
                 <button id="filterButton" data-testid="button-clear" onclick="borrarFiltros()">Borrar filtro</button>
             </nav>
-            
-
-       
-        <div id="root">
+        </header> 
+        <footer>
+            <p class="footer">Autoras: Diana Morales - Karem Aranda</p>
+        </footer>
     </div> 
-        </header>
-        <footer> karem y diana</footer>
     <script src="main.js" type="module"></script>
 </body>
+
 </html>
+

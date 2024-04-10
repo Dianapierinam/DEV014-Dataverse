@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@font-face {
+   font-family: 'londrina';
+   src: url('fonts/Londrina_Solid/LondrinaSolid-Regular.ttf') format('truetype');
+} 
 
-* {
-   font-family: "Merienda", cursive;
-}
 
 body {
    margin: 0;
