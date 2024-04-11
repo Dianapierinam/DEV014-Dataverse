@@ -21,7 +21,6 @@ header {
 .titulo img {
    max-width: 400px; 
 }
-<<<<<<< HEAD
 
 .cerrar-button {
    display: none;
@@ -31,11 +30,6 @@ header {
    display: none;
 }
 
-=======
-.cerrar-button {
-   display: none;
-}
->>>>>>> 91f26ef846671ab627cade4a3790b53dc4ade704
 nav {
    display: flex;
    justify-content: space-between;
@@ -122,13 +116,11 @@ button:hover {
    cursor: pointer;
 }
 
-<<<<<<< HEAD
 button:hover {
    background-color: gray;
    cursor: pointer;
 }
 
-=======
  
 .buho img {
    max-width: 110px;
@@ -138,7 +130,6 @@ button:hover {
    padding: 0px;
    cursor: pointer;
 }
->>>>>>> 91f26ef846671ab627cade4a3790b53dc4ade704
 .card {
    border: 1px solid #ccc;
    border-radius: 5px;
