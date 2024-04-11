@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 @font-face {
    font-family: 'londrina';
-   src: url('fonts/Londrina_Solid/LondrinaSolid-Regular.ttf') format('truetype');
-} 
-
+   src: url('fonts/LondrinaSolid-Regular.ttf') format('truetype');
+}
 
 body {
    margin: 0;
@@ -16,54 +15,111 @@ body {
 
 header {
    text-align: center;
-   padding: 10px 0;
+   padding: 7px 0;
 }
+
 .titulo img {
-   max-width: 200px; 
+   max-width: 400px; 
+}
+
+.cerrar-button {
+   display: none;
+}
+
+.check {
+   display: none;
 }
 
 nav {
-   text-align: center; /* Cambiamos a centrar el texto */
-   background-color: #444; /* Cambiamos el color de fondo */
+   display: flex;
+   justify-content: space-between;
+   padding: 7px 0px;
+   text-align: left;
+   width: 80%;
+   padding-left: 100px;
+   margin-top: -20px;
+   background-color:  #FFBD59;
    border-radius: 20px;
-   padding: 10px 20px; /* Ajustamos el relleno */
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
-}
-.navigation {
-   list-style: none;
+   height: 50px;
+   font-size: 30px;
+   margin-left: 80px;
+   color:white;;
+   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); /* Agrega sombra al nav */
+   justify-content: center;
+   font-family: 'londrina';
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
 }
 
-label {
-   padding: 8px 12px; /* Espaciado interno */
-   background-color: #444; /* Color de fondo */
-   color: white; /* Color del texto */
-   padding: 10px 20px; /* Espaciado interno */
-   border-radius: 5px; /* Bordes redondeados */
-   cursor: pointer; /* Cambiar cursor al pasar el ratón */
+.checkbtn {
+   font-size: 30px;
+    color: blue;
+    float: right;
+    line-height: 100px;
+    margin-right: 5%;
+    cursor: pointer;
+    display: none;
+ }
+
+ .nav {
+   list-style: none;
+   padding: 0;
+   justify-content: center;
+   color: #372e29;
 }
-label:hover {
-   background-color: #740001; /* Cambiar color de fondo al pasar el ratón */
-   /* Otros estilos adicionales */
+
+.navigation label {
+   font-size: 18px;
 }
-.casillas {
-   display: inline-block; 
-   margin-right: 20px; 
-   text-decoration: none; /* Eliminar subrayado */
-   font-size: 22px; /* Tamaño de fuente */
-   transition: color 0.3s; /* Transición de color suave */
+
+.navigation .filtro {
+   margin-left: 40px;
 }
-button {
-   background-color: #444; /* Color de fondo amarillo */
-   color: white;
-   border: none;
-   padding: 15px 20px; /* Ajusta el tamaño del botón */
-   border-radius: 20px; /* Bordes redondeados */
+.buho img {
+   max-width: 110px;
+   position: absolute; 
+   top: 8px; 
+   right: 200px; 
+   padding: 0px;
    cursor: pointer;
 }
-button:hover {
-   background-color: white; /* Cambia el color de fondo al pasar el ratón */
-   color: #444;
+
+select{
+   border: none;
+   color: #372e29;
+   background-color: #FFBD59;
+   font-family: Roboto Condensed;
+   font-size: 20px;
+   appearance: none;
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+   margin: 0 10px; 
 }
+
+select:focus {
+   outline: none;
+}
+
+button {
+   background-color: #383C37;
+   color: white;
+   border: none;
+   margin-left: 50px;
+   padding: 15px 20px; 
+   border-radius: 20px;
+   top: 153px; 
+   right: 150px; 
+   font-family: Roboto Condensed;
+}
+
+button:hover {
+   background-color: gray;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: gray;
+   cursor: pointer;
+}
+
 .card {
    border: 1px solid #ccc;
    border-radius: 5px;
@@ -73,12 +129,27 @@ button:hover {
    display: inline-block; 
    width: 200px; 
    background-color: rgba(255, 255, 255, 0.8); 
+   transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
+   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
+
+.card:hover {
+   transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba al pasar el mouse sobre ella */
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
 .card img {
    width: 100%; 
    height: auto;
    border-radius: 5px;
+
 }
+
+.card h1 {
+   text-align: center;
+   font-family: "Merienda", cursive;
+}
+
 .card p {
    margin-top: 10px;
    font-size: 14px;
@@ -86,6 +157,8 @@ button:hover {
    max-height: 80px; 
    line-height: 20px; 
    color: black; 
+   text-align: center;
+   font-family: "Merienda", cursive;
 }
 
 .card {
@@ -93,24 +166,118 @@ button:hover {
    border-radius: 5px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    padding: 10px;
-   margin: 20px 15px;
+   margin-bottom: 20px;
    background-color: rgba(255, 255, 255, 0.8);
-   width: 370px;
+   width: 300px;
 }
 
 .cardList {
    display: flex;
    flex-wrap: wrap;
-   gap: 20px;
+   gap: 80px;
    padding: 0px 180px;
+   justify-content: center;
 }
 
 .card img {
-   height: 500px;
+   height: 400px;
    width: 100%;
    object-fit: cover;
 }
 
+p.footer{
+   background-color: #FFBD59;
+   font-size: 32px;
+   width: 100%; 
+   height: 120px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   color: white;
+   font-family: 'londrina';
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
 
+@media screen and (max-width: 768px) {
+   
+      .navigation {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: #FFBD59;
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: -100%;
+         margin: 0px;
+         padding: 0px;
+         transition: all .3s ease;
+      }
 
+      .buho img {
+         display: none;
+      }
+
+      .titulo img {
+         max-width: 150px;
+      }
+   
+      .check {
+          display: none; 
+      }
+      .cerrar-button {
+         display: block;
+         font-family: auto;
+         position: absolute;
+         top: 20px;
+         right: 20px;
+      }
+   
+      .checkbtn {
+         display: block;
+         cursor: pointer;
+         float: right;
+         margin-right: 20px;
+         margin-top: 20px;
+      }
+   
+      .checkbtn img {
+         background-color: #ccc;
+         position: absolute;
+          width: 24px;
+          height: auto;
+      }
+   
+      .check:checked ~ .navigation {
+         left: 0;
+      } 
+   
+      .navigation .filtro {
+         display: flex;
+         justify-content: space-between;
+         width: 80%;
+         margin: 5px 0px;
+      }
+   
+      .navigation .filtro select {
+         width: 150px;
+      }
+   
+      .navigation button {
+         margin-top: 20px;
+      }
+   
+      .label-filtro {
+         font-size: 14px;
+         margin-bottom: 8px;
+      }
+   }
+
+   .cardList {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0px 20px; 
+      justify-content: center;
+   }
 

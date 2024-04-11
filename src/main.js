@@ -8,20 +8,31 @@ const selectFilter = document.getElementById('filtrarCasa');
 const selectFilterRaza = document.getElementById('filtrarPorRaza');
 const filterButton = document.getElementById('filterButton'); 
 const sort = document.getElementById('order');
-
-
+const closeBtn = document.querySelector("#close-btn");
+const closeCheckbox = document.getElementById("check");
 
 //Carga inicial//
 renderItems(data);
 
-
 //eventos//
 selectFilter.addEventListener('change', onFilterChange);
 selectFilterRaza.addEventListener('change', onFilterChange);
+sort.addEventListener('change', onFilterChange);
+closeBtn.addEventListener('click', closeFilter);
+
+// Obtener el boton de X
+// Agregar un evento click a este boton X
+
+function closeFilter() {
+  closeCheckbox.click();
+}
+
+
 
 function onFilterChange() {
   const datosFiltrados = filtrar(data);
-  renderItems(datosFiltrados);
+  const datosOrdenados = sortData(datosFiltrados, 'name', sort.value); 
+  renderItems(datosOrdenados);
 }
 
 function filtrar() {
@@ -34,25 +45,19 @@ function filtrar() {
   if (selectFilterRaza.value) {
     datosFiltrados = filterData(datosFiltrados, 'raza', selectFilterRaza.value);
   }
+  datosFiltrados = sortData(datosFiltrados, 'name', sort.value);
 
   return datosFiltrados;
 }
-
-
-sort.addEventListener('change',() => {
-  const newData = sortData(data, 'name', sort.value);
-  renderItems(newData);
-});
-
-
 
 filterButton.addEventListener("click", borrarFiltros);
 
 function borrarFiltros() {
   selectFilter.value = ""; 
   selectFilterRaza.value = ""; 
-  sort.value = "asc";
   sort.value = "desc";
+  sort.value = "asc";
+  
   
   renderItems(data); 
 }
