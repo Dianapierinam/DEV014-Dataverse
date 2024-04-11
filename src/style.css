@@ -21,6 +21,7 @@ header {
 .titulo img {
    max-width: 400px; 
 }
+<<<<<<< HEAD
 
 .cerrar-button {
    display: none;
@@ -30,6 +31,11 @@ header {
    display: none;
 }
 
+=======
+.cerrar-button {
+   display: none;
+}
+>>>>>>> 91f26ef846671ab627cade4a3790b53dc4ade704
 nav {
    display: flex;
    justify-content: space-between;
@@ -106,12 +112,8 @@ button {
    padding: 15px 20px; 
    border-radius: 20px;
    top: 153px; 
-   right: 150px; 
+   right: 100px; 
    font-family: Roboto Condensed;
-}
-
-button:hover {
-   background-color: gray;
    cursor: pointer;
 }
 
@@ -120,6 +122,23 @@ button:hover {
    cursor: pointer;
 }
 
+<<<<<<< HEAD
+button:hover {
+   background-color: gray;
+   cursor: pointer;
+}
+
+=======
+ 
+.buho img {
+   max-width: 110px;
+   position: absolute; /* Establece el posicionamiento absoluto para la imagen */
+   top: 8px; 
+   right: 200px; 
+   padding: 0px;
+   cursor: pointer;
+}
+>>>>>>> 91f26ef846671ab627cade4a3790b53dc4ade704
 .card {
    border: 1px solid #ccc;
    border-radius: 5px;
@@ -185,6 +204,10 @@ button:hover {
    object-fit: cover;
 }
 
+#return{
+display: none;
+}
+
 p.footer{
    background-color: #FFBD59;
    font-size: 32px;
@@ -195,6 +218,7 @@ p.footer{
    align-items: center;
    color: white;
    font-family: 'londrina';
+   position: absolute;
    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 

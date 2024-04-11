@@ -62,5 +62,19 @@ function borrarFiltros() {
   renderItems(data); 
 }
 
+const clearDataImage = document.getElementById('clearData');
+clearDataImage.addEventListener('click', () => {
+  const rootDiv = document.getElementById('root');
+  rootDiv.innerHTML = '';
+});
 
+// Guardar la data original al cargar la página
+const dataOriginal = document.getElementById('root').innerHTML;
+const returnButton = document.getElementById('return');
+returnButton.addEventListener('click', () => {
+  // Obtener referencia al elemento root
+  const rootDiv = document.getElementById('root');
+  rootDiv.innerHTML = dataOriginal;
+  
+});
 
