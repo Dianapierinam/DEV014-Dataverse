@@ -21,7 +21,9 @@ header {
 .titulo img {
    max-width: 400px; 
 }
-
+.cerrar-button {
+   display: none;
+}
 nav {
    text-align: left;
    width: 80%;
@@ -62,11 +64,22 @@ button {
    padding: 15px 20px; 
    border-radius: 20px;
    top: 153px; 
-   right: 150px; 
+   right: 100px; 
    font-family: Roboto Condensed;
+   cursor: pointer;
 }
 button:hover {
    background-color: green;
+}
+
+ 
+.buho img {
+   max-width: 110px;
+   position: absolute; /* Establece el posicionamiento absoluto para la imagen */
+   top: 8px; 
+   right: 200px; 
+   padding: 0px;
+   cursor: pointer;
 }
 .card {
    border: 1px solid #ccc;
@@ -132,6 +145,10 @@ button:hover {
    object-fit: cover;
 }
 
+#return{
+display: none;
+}
+
 p.footer{
    background-color: #FFBD59;
    font-size: 40px;
@@ -142,6 +159,7 @@ p.footer{
    align-items: center;
    color: white;
    font-family: 'londrina';
+   position: absolute;
    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 /* Media query para ajustar el tamaño de la fuente en el nav */

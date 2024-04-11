@@ -5,6 +5,7 @@
     <title>Harry Potter</title>
     <link rel="icon" href="img/icono.png" type="png">
     <link rel="stylesheet" href="style.css" />
+    <!---<script defer src="https://app.embed.im/snow.js"></script>--->
 </head>
 <body>
         <header >
@@ -13,6 +14,7 @@
             </div>
             <h1></h1>
             <nav class="navigation">
+                <span id="close-btn" class="cerrar-button">&times;</span>
                 <label for="filtrarCasa" class="label-filtro">Filtrar por casa</label>
                 <select id="filtrarCasa"  name="filtrarPorCasa" value="">
                         <option value="" disabled selected>Seleccionar Casa</option>
@@ -33,17 +35,29 @@
                     </select>
                 <label for="order" class="label-filtro">Ordenar</label>
                 <select id="order"  name="num" data-testid="select-sort">
+                    <option value="" disabled selected>Selecciona orden</option>
                     <option value="asc">Nombre (A-Z)</option>
                     <option value="desc">Nombre (Z-A)</option>
                 </select>
 
-                <button id="filterButton" data-testid="button-clear" onclick="borrarFiltros()">Borrar filtro</button>
+                <button id="filterButton" data-testid="button-clear" >Borrar filtro</button>
+                <div class="buho">
+                    <img id = "clearData" src="img/buho.png">
+                </div>
             </nav>
             
 
         </header> 
-        <div id="root">
-    </div> 
+        <main>
+            <div id="root">
+            </div> 
+            <div id="calculation">
+                
+            </div>
+            
+
+            <button id="return" data-testid="button-return" >Regresar</button>
+        </main>
     <footer>
         <p class="footer">Autoras: Diana Morales - Karem Aranda</p>
     </footer>
