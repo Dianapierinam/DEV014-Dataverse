@@ -28,13 +28,14 @@ export const computeStats = (data) => {
   const totalPeople = data.length;
   const totalYearSum = data.reduce((sum, item) => {
     const yearOfBirth = item.facts.yearOfBirth;
+
     // Verificar si el año de nacimiento es válido
     if (yearOfBirth && !isNaN(yearOfBirth)) {
       sum += parseInt(yearOfBirth); // Sumar el año de nacimiento al total
     }
     return sum;
   }, 0);
-  const averageYear = totalYearSum / totalPeople;
+  const averageYear = (totalYearSum / totalPeople).toFixed(2)
   return averageYear;
 };
 

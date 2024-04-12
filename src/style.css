@@ -3,6 +3,9 @@
    font-family: 'londrina';
    src: url('fonts/LondrinaSolid-Regular.ttf') format('truetype');
 }
+* {
+   cursor: url('img/varita.png') 0 0, auto;
+}
 
 body {
    margin: 0;
@@ -11,29 +14,40 @@ body {
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover; 
-   cursor: url('img/varita.png') 0 20, auto;
 }
-
-
-
 header {
    text-align: center;
    padding: 7px 0;
 }
-
-.titulo img {
-   max-width: 400px;
-   cursor: pointer; 
+#embedim--snow {
+   display: none;
 }
-
+#embedim--snow.mostrar {
+   display: block;
+}
+#root {
+   display: none;
+}
+#root.mostrar-data {
+   display: block;
+}
+#calculation {
+   display: none;
+}
+#calculation.mostrar-grafica {
+   display: block;
+   background-color: white;
+   margin: 50px;
+}
+.titulo img {
+   max-width: 400px; 
+}
 .cerrar-button {
    display: none;
 }
-
 .check {
    display: none;
 }
-
 nav {
    display: flex;
    justify-content: space-between;
@@ -52,9 +66,7 @@ nav {
    justify-content: center;
    font-family: 'londrina';
    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
-   cursor: url('img/varita.png') 0 0, auto;
 }
-
 .checkbtn {
    font-size: 30px;
     color: blue;
@@ -64,19 +76,15 @@ nav {
     cursor: pointer;
     display: none;
  }
-
  .nav {
    list-style: none;
    padding: 0;
    justify-content: center;
    color: #372e29;
-   cursor: url('img/varita.png') 0 20, auto;
 }
-
 .navigation label {
    font-size: 18px;
 }
-
 .navigation .filtro {
    margin-left: 40px;
 }
@@ -89,6 +97,37 @@ nav {
    cursor: pointer;
 }
 
+.tooltip {
+   max-width: 50px;
+   position: absolute; 
+   top: 60px;
+   right: 230px;
+   cursor: pointer;
+   font-size: 15px;
+   text-decoration:overline;
+   color: black;
+ }
+ 
+ .tooltip .tooltiptext {
+   visibility: hidden;
+   width: 120px;
+   background-color: #555;
+   color: white;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;
+   position: absolute;
+   left: 200%;
+   margin-left: -60px;
+   opacity: 0;
+   transition: opacity 0.3s;
+ }
+ 
+ .tooltip:hover .tooltiptext {
+   visibility: visible;
+   opacity: 1;
+ }
+
 select{
    border: none;
    color: #372e29;
@@ -98,13 +137,11 @@ select{
    appearance: none;
    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
    margin: 0 10px; 
-   cursor: url('img/varita.png') 0 0, auto;
+   cursor: pointer;
 }
-
 select:focus {
    outline: none;
 }
-
 button {
    background-color: #383C37;
    color: white;
@@ -117,26 +154,15 @@ button {
    font-family: Roboto Condensed;
    cursor: pointer;
 }
-
 button:hover {
    background-color: gray;
    cursor: pointer;
 }
-
 button:hover {
    background-color: gray;
    cursor: pointer;
 }
-
  
-.buho img {
-   max-width: 110px;
-   position: absolute; /* Establece el posicionamiento absoluto para la imagen */
-   top: 8px; 
-   right: 200px; 
-   padding: 0px;
-   cursor: pointer;
-}
 .card {
    border: 1px solid #ccc;
    border-radius: 5px;
@@ -149,24 +175,19 @@ button:hover {
    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
-
 .card:hover {
    transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba al pasar el mouse sobre ella */
    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
-
 .card img {
    width: 100%; 
    height: auto;
    border-radius: 5px;
-
 }
-
 .card h1 {
    text-align: center;
    font-family: "Merienda", cursive;
 }
-
 .card p {
    margin-top: 10px;
    font-size: 14px;
@@ -177,7 +198,6 @@ button:hover {
    text-align: center;
    font-family: "Merienda", cursive;
 }
-
 .card {
    border: 1px solid #ccc;
    border-radius: 5px;
@@ -187,7 +207,6 @@ button:hover {
    background-color: rgba(255, 255, 255, 0.8);
    width: 300px;
 }
-
 .cardList {
    display: flex;
    flex-wrap: wrap;
@@ -195,23 +214,15 @@ button:hover {
    padding: 0px 180px;
    justify-content: center;
 }
-
 .card img {
    height: 400px;
    width: 100%;
    object-fit: cover;
 }
 
-#calculation{
-   background-color: red;
-   height: 400px;
-   width: 100%;
-}
-
 #return{
-display: none;
+display: block;
 }
-
 
 p.footer{
    background-color: #FFBD59;
@@ -223,11 +234,9 @@ p.footer{
    align-items: center;
    color: white;
    font-family: 'londrina';
+   /*position: absolute; */
    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-   position: absolute;
-   
 }
-
 @media screen and (max-width: 768px) {
    
       .navigation {
@@ -244,11 +253,9 @@ p.footer{
          padding: 0px;
          transition: all .3s ease;
       }
-
       .buho img {
          display: none;
       }
-
       .titulo img {
          max-width: 150px;
       }
@@ -303,11 +310,9 @@ p.footer{
          margin-bottom: 8px;
       }
    }
-
    .cardList {
       display: flex;
       flex-wrap: wrap;
       padding: 0px 20px; 
       justify-content: center;
    }
-

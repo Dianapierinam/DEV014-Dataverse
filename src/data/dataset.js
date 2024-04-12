@@ -291,7 +291,7 @@ export default [ //todo esto es un arrey de objetos
     "facts": {
       "casaDeOrigen": "slytherin",
       "raza": "sangreMestiza",
-      "yearOfBirth": "c. 1965"
+      "yearOfBirth": "1965"
     },
   }
 ];

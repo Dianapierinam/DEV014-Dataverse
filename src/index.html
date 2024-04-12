@@ -5,12 +5,12 @@
     <title>Harry Potter</title>
     <link rel="icon" href="img/icono.png" type="png">
     <link rel="stylesheet" href="style.css" />
-    <!---<script defer src="https://app.embed.im/snow.js"></script>--->
+    <script defer src="https://app.embed.im/snow.js"></script>
 </head>
 <body>
    <header>
         <div class="titulo">
-            <img id="returnTitulo" src="img/titulo.png">
+            <img src="img/titulo.png">
         </div>
         <h1></h1>
         <input type="checkbox" id="check" class="check">
@@ -49,33 +49,25 @@
                     <option value="desc">Nombre (Z-A)</option>
                 </select>
             </div>
-
                 <button id="filterButton" data-testid="button-clear" >Borrar filtro</button>
-                <div class="buho">
-                    <img id = "clearData" src="img/buho.png">
+                <div class="buho" id="clearData">
+                    <img src="img/buho.png"> <div class="tooltip">click on the owl
+                        <span class="tooltiptext">Revisa el año donde mas personajes nacieron</span>
+                      </div>
                 </div>
             </nav>
-            
-
         </header> 
         <main>
-            <div id="root">
-            </div> 
-            <div id="calculation">
-                
-            </div>
-            
-
-            <button id="return" data-testid="button-return" >Regresar</button>
-            <div id="varita">
-                
-            </div>
+          <div id="root" class="mostrar-data"></div> 
+          <div id="calculation"></div>
+          <button id="return" data-testid="button-return" >Regresar</button>
+          <div id="varita"></div>
         </main>
     <footer>
         <p class="footer">Autoras: Diana Morales - Karem Aranda</p>
     </footer>
     <script src="main.js" type="module"></script>
 </body>
-
 </html>
+
 
