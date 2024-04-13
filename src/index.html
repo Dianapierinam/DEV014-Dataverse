@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter</title>
-    <link rel="icon" href="img/icono.png" type="png">
+    <link rel="icon" href="img/icono.png" type="image/png">
     <link rel="stylesheet" href="style.css" />
     <script defer src="https://app.embed.im/snow.js"></script>
 </head>
 <body>
    <header>
         <div class="titulo">
-            <img src="img/titulo.png">
+            <img src="img/titulo.png" alt="Titulo">
         </div>
         <h1></h1>
         <input type="checkbox" id="check" class="check">
         <label for="check" class="checkbtn">
-            <img src="img/menu responsive.png">
+            <img src="img/menu responsive.png" alt="Menu responsive">
         </label>
         <nav class="navigation">
             <span id="close-btn" class="cerrar-button">&times;</span>
             <div class="filtro">
                 <label for="filtrarCasa" class="label-filtro">Filtrar por casa</label>
-                <select id="filtrarCasa"  name="filtrarPorCasa" value="">
-                        <option value="" disabled selected>Seleccionar Casa</option>
-                        <option value="gryffindor">Gryffindor</option>
-                        <option value="hufflepuff">Hufflepuff</option>
-                        <option value="ravenclaw">Ravenclaw</option>
-                        <option value="slytherin">Slytherin</option>
-                        <option value="noTienenCasa">No tienen casa</option>
+                <select id="filtrarCasa" name="filtrarPorCasa" value="">
+                    <option value="" disabled selected>Seleccionar Casa</option>
+                    <option value="gryffindor">Gryffindor</option>
+                    <option value="hufflepuff">Hufflepuff</option>
+                    <option value="ravenclaw">Ravenclaw</option>
+                    <option value="slytherin">Slytherin</option>
+                    <option value="noTienenCasa">No tienen casa</option>
                 </select>
             </div>
             <div class="filtro">
                 <label for="filtrarPorRaza" class="label-filtro">Filtrar por raza</label>
-                <select id="filtrarPorRaza"  name="filtrarPorRaza">
+                <select id="filtrarPorRaza" name="filtrarPorRaza">
                     <option value="" disabled selected>Seleccionar Raza</option>
                     <option value="sangreMestiza">Sangre mestiza</option>
                     <option value="sangreSucia">Sangre sucia</option>
@@ -43,29 +43,65 @@
             </div>
             <div class="filtro">
                 <label for="order" class="label-filtro">Ordenar</label>
-                <select id="order"  name="num" data-testid="select-sort">
+                <select id="order" name="num" data-testid="select-sort">
                     <option value="" disabled selected>Selecciona orden</option>
                     <option value="asc">Nombre (A-Z)</option>
                     <option value="desc">Nombre (Z-A)</option>
                 </select>
             </div>
-                <button id="filterButton" data-testid="button-clear" >Borrar filtro</button>
-                <div class="buho" id="clearData">
-                    <img src="img/buho.png"> <div class="tooltip">click on the owl
-                        <span class="tooltiptext">Revisa el año donde mas personajes nacieron</span>
-                      </div>
+            <button id="filterButton" data-testid="button-clear">Borrar filtro</button>
+            <div class="buho" id="clearData">
+                <img src="img/buho.png" alt="Buho">
+                <div class="tooltip">click on the owl
+                    <span class="tooltiptext">Revisa el año donde mas personajes nacieron</span>
                 </div>
-            </nav>
-        </header> 
-        <main>
-          <div id="root" class="mostrar-data"></div> 
-          <div id="calculation"></div>
-          <button id="return" data-testid="button-return" >Regresar</button>
-          <div id="varita"></div>
-        </main>
+            </div>
+        </nav>
+    </header> 
+    <main>
+        <div id="root" class="mostrar-data"></div> 
+        <div id="calculation">
+            <img class="gif" src="img/G75K.gif" alt="">
+            <div class="textpromedio">
+                <div class="textpromedio-container">
+                    <p>El promedio de los años de nacimiento es:</p>
+                    <span id="textpromedio"></span>
+                </div>
+            </div>
+        </div>
+        <div class="returnmobile">
+            <button id="return" data-testid="button-return">Regresar</button>
+        </div>
+        <div id="varita"></div>
+    </main>
     <footer>
-        <p class="footer">Autoras: Diana Morales - Karem Aranda</p>
+        <div class="footer">
+            <div class="pagina">
+                <img class="footHarry" src="img/titulo.png" alt="Titulo">
+                <p class="foot1"></p>
+                <p class="foot2">Esta página está dedicada a explorar y profundizar en 
+                    los diversos personajes que habitan el universo mágico de Harry Potter.</p>
+            </div>
+            <div class="contact">
+                <h4>Contactanos</h4>
+                <p>Dirección: Calle Paris 155 - Miraflores</p>
+                <p>Telf: 01 354 9813</p>
+                <p>Correo: info@harrypotter.com</p>
+            </div>
+            <div class="social-link">
+                <h4 class="siguenos">Síguenos</h4>
+                <a class="icono1" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="icono1" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="icono1" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="icono1" href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
+    <div class="autores">
+        <div class="copyright">
+            &copy; 2024 Diana Morales - Karem Aranda
+        </div>
+    </div>
     <script src="main.js" type="module"></script>
 </body>
 </html>

@@ -4,14 +4,16 @@ import data from './data/dataset.js';
 
 
 //constantes y variable//
-const selectFilter = document.getElementById('filtrarCasa');
-const selectFilterRaza = document.getElementById('filtrarPorRaza');
-const filterButton = document.getElementById('filterButton'); 
-const sort = document.getElementById('order');
+const selectFilter = document.querySelector('#filtrarCasa');
+const selectFilterRaza = document.querySelector('#filtrarPorRaza');
+const filterButton = document.querySelector('#filterButton'); 
+const sort = document.querySelector('#order');
 const closeBtn = document.querySelector("#close-btn");
-const closeCheckbox = document.getElementById("check");
-const owlButton = document.getElementById("clearData");
-const calculationElement = document.getElementById('calculation');
+const closeCheckbox = document.querySelector("#check");
+const owlButton = document.querySelector("#clearData");
+const calculationElement = document.querySelector('#calculation');
+const bootnretun = document.getElementById('return');
+const textpromedio = document.getElementById('textpromedio')
 
 
 
@@ -26,11 +28,17 @@ selectFilterRaza.addEventListener('change', onFilterChange);
 sort.addEventListener('change', onFilterChange);
 closeBtn.addEventListener('click', closeFilter);
 document.addEventListener('DOMContentLoaded', showAverageYear);
+bootnretun.addEventListener('click', bootnretunn);
 owlButton.addEventListener('click', function() {
-  toggleMostrar('root', 'mostrar-data',); //Este es para mostrar y no mostrar la data
+  toggleMostrar('root', 'mostrar-data'); //Este es para mostrar y no mostrar la data
   toggleMostrar("embedim--snow", "mostrar"); //Este es para mostrar y no mostrar la nieve
-  toggleMostrar("calculation", "mostrar-grafica",); //Este es para mostrar y no mostrar la gráfica
+  toggleMostrar("calculation", "mostrar-grafica"); //Este es para mostrar y no mostrar la gráfica
+  toggleMostrar("return","elpromedio");
 });
+
+function bootnretunn(){
+  owlButton.click();
+}
 
 
 // Obtener el boton de X
@@ -55,7 +63,7 @@ function toggleMostrar(id, clase) {
 function showAverageYear() {
   const averageYear = computeStats(data);
   if (calculationElement) {
-    calculationElement.textContent = `El promedio de los años de nacimiento es: ${averageYear}`;
+    textpromedio.innerHTML = averageYear;
   }
 }
 
@@ -82,8 +90,6 @@ function borrarFiltros() {
   selectFilter.value = ""; 
   selectFilterRaza.value = ""; 
   sort.value = "desc";
-  sort.value = "asc";
-  
-  
+  sort.value = "asc"
   renderItems(data); 
 }

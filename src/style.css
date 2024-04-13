@@ -34,11 +34,37 @@ header {
 #calculation {
    display: none;
 }
+
 #calculation.mostrar-grafica {
-   display: block;
-   background-color: white;
-   margin: 50px;
+   display: flex;
+   justify-content: center;
+   margin: 100px 0px;
 }
+.gif {
+   border: 10px solid #ccc;
+}
+.textpromedio {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   text-decoration: wavy;
+   font-size: 30px;
+   background-color:darkgoldenrod ;
+   text-transform: uppercase;
+   background-size: auto auto;
+   background-size: 200% auto;
+   height: 450px;
+   width: 450px;
+   margin-left: 100px;
+   border-radius: 50%;
+   border: 3px solid #ccc;
+}
+
+.textpromedio-container {
+   width: 80%;
+   margin: auto;
+}
+
 .titulo img {
    max-width: 400px; 
 }
@@ -67,6 +93,10 @@ nav {
    font-family: 'londrina';
    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
 }
+
+.label-filtro {
+   font-size: 25px !important;
+} 
 .checkbtn {
    font-size: 30px;
     color: blue;
@@ -146,7 +176,6 @@ button {
    background-color: #383C37;
    color: white;
    border: none;
-   margin-left: 50px;
    padding: 15px 20px; 
    border-radius: 20px;
    top: 153px; 
@@ -220,22 +249,90 @@ button:hover {
    object-fit: cover;
 }
 
-#return{
-display: block;
+ #return {
+display: none;
 }
 
-p.footer{
-   background-color: #FFBD59;
-   font-size: 32px;
-   width: 100%; 
-   height: 120px;
-   justify-content: center;
+#return.elpromedio {
+   display: block;
+
+} 
+.returnmobile{
    display: flex;
+   justify-content: flex-end;
+   padding: 0px 50px;
+   margin-bottom: 30px;
+}
+footer {
+   background-color: #FFBD59;
+   font-size: 15px;
+   width: 100%;
+   height: 170px;
+   display: flex;
+   justify-content: center;
    align-items: center;
+   color: #5d5d5d;
+   font-family: "Merienda", cursive;
+   position: relative; 
+   bottom: 0; 
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap; 
+}
+
+.pagina,
+.contact,
+.social-link {
+   text-align: center; 
+   padding: 0 100px 10px; 
+   flex: 1; /* Permite que los elementos ocupen el mismo espacio */
+}
+.contact {
+   order: 2; 
+}
+
+.pagina {
+   order: 1; 
+}
+
+.social-link {
+   order: 3; 
+}
+
+.pagina {
+  text-align: center; 
+  max-width: 700px; 
+}
+
+.footHarry {
+   height: 60px; 
+   margin-top: 25px;
+}
+
+.foot2 {
+   text-align: justify; 
+   max-width: 800px; 
+}
+
+.icono1 {
+   font-size: 24px; 
+   color: #946b2d; 
+   margin-right: 10px; 
+}
+
+.autores {
+   background-color: #5d5d5d;
+   width: 100%;
+   height: 50px;
+}
+.copyright {
+   text-align: center; 
    color: white;
-   font-family: 'londrina';
-   /*position: absolute; */
-   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+   line-height: 50px; 
 }
 @media screen and (max-width: 768px) {
    
@@ -282,8 +379,10 @@ p.footer{
       .checkbtn img {
          background-color: #ccc;
          position: absolute;
-          width: 24px;
-          height: auto;
+         top: 30px;
+         right: 30px;
+         width: 24px;
+         height: auto;
       }
    
       .check:checked ~ .navigation {
@@ -309,10 +408,37 @@ p.footer{
          font-size: 14px;
          margin-bottom: 8px;
       }
+      .cardList {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 0px 20px; 
+         justify-content: center;
+      }
+      #calculation.mostrar-grafica {
+         flex-wrap: wrap;
+      }
+      .textpromedio {
+         width: 300px;
+         height: 300px;
+         font-size: 20px;
+         margin-top: 50px;
+         margin-left: 0px;
+      }
+
+      .returnmobile {
+         display: flex;
+         justify-content: flex-end;
+         padding: 0px 50px;
+         margin-bottom: 30px;
+      }
+   
+      footer {
+         height: auto;
+      }
    }
-   .cardList {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0px 20px; 
-      justify-content: center;
-   }
+
+
+
+
+
+
