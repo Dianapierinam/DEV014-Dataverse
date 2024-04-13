@@ -14,6 +14,7 @@ body {
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover; 
+
 }
 header {
    text-align: center;
@@ -67,16 +68,20 @@ nav {
    font-family: 'londrina';
    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
 }
+
+.label-filtro {
+   font-size: 25px !important;
+} 
 .checkbtn {
    font-size: 30px;
-    color: blue;
-    float: right;
-    line-height: 100px;
-    margin-right: 5%;
-    cursor: pointer;
-    display: none;
- }
- .nav {
+   color: blue;
+   float: right;
+   line-height: 100px;
+   margin-right: 5%;
+   cursor: pointer;
+   display: none;
+}
+.nav {
    list-style: none;
    padding: 0;
    justify-content: center;
@@ -106,9 +111,9 @@ nav {
    font-size: 15px;
    text-decoration:overline;
    color: black;
- }
- 
- .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
    visibility: hidden;
    width: 120px;
    background-color: #555;
@@ -121,12 +126,12 @@ nav {
    margin-left: -60px;
    opacity: 0;
    transition: opacity 0.3s;
- }
- 
- .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
    visibility: visible;
    opacity: 1;
- }
+}
 
 select{
    border: none;
@@ -162,7 +167,7 @@ button:hover {
    background-color: gray;
    cursor: pointer;
 }
- 
+
 .card {
    border: 1px solid #ccc;
    border-radius: 5px;
@@ -174,6 +179,7 @@ button:hover {
    background-color: rgba(255, 255, 255, 0.8); 
    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+   
 }
 .card:hover {
    transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba al pasar el mouse sobre ella */
@@ -213,6 +219,7 @@ button:hover {
    gap: 80px;
    padding: 0px 180px;
    justify-content: center;
+   
 }
 .card img {
    height: 400px;
@@ -224,18 +231,76 @@ button:hover {
 display: block;
 }
 
-p.footer{
+footer {
    background-color: #FFBD59;
-   font-size: 32px;
-   width: 100%; 
-   height: 120px;
-   justify-content: center;
+   font-size: 15px;
+   width: 100%;
+   height: 170px;
    display: flex;
+   justify-content: center;
    align-items: center;
+   color: #5d5d5d;
+   font-family: "Merienda", cursive;
+   position: relative; 
+   bottom: 0;
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap; 
+}
+
+.pagina,
+.contact,
+.social-link {
+   text-align: center; 
+   padding: 0 100px 10px; 
+   flex: 1; /* Permite que los elementos ocupen el mismo espacio */
+}
+.contact {
+   order: 2; 
+}
+
+.pagina {
+   order: 1; 
+}
+
+.social-link {
+   order: 3; 
+}
+
+.pagina {
+  text-align: center; 
+  max-width: 700px; 
+}
+
+.footHarry {
+   height: 60px; 
+   margin-top: 25px;
+}
+
+.foot2 {
+   text-align: justify; 
+   max-width: 800px; 
+}
+
+.icono1 {
+   font-size: 24px; 
+   color: #946b2d; 
+   margin-right: 10px; 
+}
+
+.autores {
+   background-color: #5d5d5d;
+   width: 100%;
+   height: 50px;
+}
+.copyright {
+   text-align: center; 
    color: white;
-   font-family: 'londrina';
-   /*position: absolute; */
-   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+   line-height: 50px; 
 }
 @media screen and (max-width: 768px) {
    
