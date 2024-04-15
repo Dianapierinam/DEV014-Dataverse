@@ -25,19 +25,28 @@ export const sortData = (data, sortBy, sortOrder) => {
 }
 
 export const computeStats = (data) => {
-  const totalPeople = data.length;
-  const totalYearSum = data.reduce((sum, item) => {
+  const validYears = data.map((item) => {
     const yearOfBirth = item.facts.yearOfBirth;
 
     // Verificar si el año de nacimiento es válido
     if (yearOfBirth && !isNaN(yearOfBirth)) {
-      sum += parseInt(yearOfBirth); // Sumar el año de nacimiento al total
+      return parseInt(yearOfBirth); // Retornar el año de nacimiento como número
     }
+    return null; // Retornar null para los años de nacimiento inválidos
+  }).filter((year) => year !== null); // Filtrar los años de nacimiento válidos (no null)
+
+  const totalPeople = validYears.length;
+  const totalYearSum = validYears.reduce((sum, year) => {
+    sum += year; // Sumar el año de nacimiento al total
     return sum;
   }, 0);
-  const averageYear = (totalYearSum / totalPeople).toFixed(2)
-  return averageYear;
+
+  const averageYear = (totalYearSum / totalPeople);
+  const averageYearInteger = parseInt(averageYear);
+  return averageYearInteger;
 };
+
+
 
 
 

@@ -14,7 +14,6 @@ body {
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover; 
-
 }
 header {
    text-align: center;
@@ -35,11 +34,47 @@ header {
 #calculation {
    display: none;
 }
+
 #calculation.mostrar-grafica {
-   display: block;
-   background-color: white;
-   margin: 50px;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
 }
+.gif {
+   position: absolute; 
+   top: 63%; 
+   right: calc(50% + -100px);
+   transform: translate(-50%, -50%); 
+   border-radius: 10px; 
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+ }
+ 
+ .textpromedio {
+   position: absolute; 
+   top: 55%; /* Coloca el elemento .textpromedio en la mitad vertical de la ventana */
+   left: calc(50% + 250px); 
+   transform: translate(-50%, -50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 30px;
+   background-color: rgba(0, 0, 0, 0.8); 
+   background-size: 200% auto;
+   height: 300px;
+   width: 450px;
+   border-radius: 20px; 
+   margin-top: 20px; 
+   color: #eabe3f;
+   box-shadow: 0 0 20px rgba(234, 190, 63, 1);
+ }
+ 
+
+.textpromedio-container {
+   width: 80%;
+   margin: auto;
+}
+
 .titulo img {
    max-width: 400px; 
 }
@@ -63,10 +98,10 @@ nav {
    font-size: 30px;
    margin-left: 80px;
    color:white;;
-   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); /* Agrega sombra al nav */
+   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); 
    justify-content: center;
    font-family: 'londrina';
-   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); 
 }
 
 .label-filtro {
@@ -74,14 +109,14 @@ nav {
 } 
 .checkbtn {
    font-size: 30px;
-   color: blue;
-   float: right;
-   line-height: 100px;
-   margin-right: 5%;
-   cursor: pointer;
-   display: none;
-}
-.nav {
+    color: blue;
+    float: right;
+    line-height: 100px;
+    margin-right: 5%;
+    cursor: pointer;
+    display: none;
+ }
+ .nav {
    list-style: none;
    padding: 0;
    justify-content: center;
@@ -105,15 +140,20 @@ nav {
 .tooltip {
    max-width: 50px;
    position: absolute; 
-   top: 60px;
-   right: 230px;
+   top: 80px;
+   right: 225px;
    cursor: pointer;
    font-size: 15px;
-   text-decoration:overline;
    color: black;
-}
+   border-radius: 100%; 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   background-color: rgba(255, 255, 255, 0.5); 
+   padding: 5px; 
+   border: 1px solid white; 
 
-.tooltip .tooltiptext {
+ }
+ 
+ .tooltip .tooltiptext {
    visibility: hidden;
    width: 120px;
    background-color: #555;
@@ -122,16 +162,15 @@ nav {
    border-radius: 6px;
    padding: 5px 0;
    position: absolute;
-   left: 200%;
-   margin-left: -60px;
    opacity: 0;
    transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
+ }
+ 
+ .tooltip:hover .tooltiptext {
    visibility: visible;
    opacity: 1;
-}
+ }
+ 
 
 select{
    border: none;
@@ -151,7 +190,6 @@ button {
    background-color: #383C37;
    color: white;
    border: none;
-   margin-left: 50px;
    padding: 15px 20px; 
    border-radius: 20px;
    top: 153px; 
@@ -167,7 +205,7 @@ button:hover {
    background-color: gray;
    cursor: pointer;
 }
-
+ 
 .card {
    border: 1px solid #ccc;
    border-radius: 5px;
@@ -179,7 +217,6 @@ button:hover {
    background-color: rgba(255, 255, 255, 0.8); 
    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-   
 }
 .card:hover {
    transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba al pasar el mouse sobre ella */
@@ -219,7 +256,6 @@ button:hover {
    gap: 80px;
    padding: 0px 180px;
    justify-content: center;
-   
 }
 .card img {
    height: 400px;
@@ -227,10 +263,39 @@ button:hover {
    object-fit: cover;
 }
 
-#return{
-display: block;
+ #return {
+display: none;
+background-color: #ccc;
+color: #372e29;
+font-size: 16px;
 }
 
+#return.elpromedio {
+   display: block;
+
+} 
+.returnmobile{
+   display: flex;
+   padding: 0px 50px;
+   margin-bottom: 30px;
+   justify-content: center;
+   position: absolute; 
+   top: 85%;
+   right: 27%;
+   
+}
+#mensaje{
+   color: white;
+   font-size: 50px;
+   width: auto;
+   height: 400px;
+   padding: auto;
+   justify-content: center;
+   align-items: center;
+   display: flex; /* Establecer como flexbox */
+
+ 
+}
 footer {
    background-color: #FFBD59;
    font-size: 15px;
@@ -242,7 +307,7 @@ footer {
    color: #5d5d5d;
    font-family: "Merienda", cursive;
    position: relative; 
-   bottom: 0;
+   bottom: 0; 
 }
 
 .footer {
@@ -347,8 +412,10 @@ footer {
       .checkbtn img {
          background-color: #ccc;
          position: absolute;
-          width: 24px;
-          height: auto;
+         top: 30px;
+         right: 30px;
+         width: 24px;
+         height: auto;
       }
    
       .check:checked ~ .navigation {
@@ -374,10 +441,43 @@ footer {
          font-size: 14px;
          margin-bottom: 8px;
       }
+      .cardList {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 0px 20px; 
+         justify-content: center;
+      }
+      #calculation.mostrar-grafica {
+         flex-wrap: wrap;
+      }
+      .textpromedio {
+         width: 300px;
+         height: 300px;
+         font-size: 20px;
+         margin-top: 50px;
+         margin-left: 0px;
+      }
+
+      .returnmobile {
+         display: flex;
+         justify-content: flex-end;
+         padding: 0px 50px;
+         margin-bottom: 30px;
+      }
+   
+      footer {
+         height: auto;
+      }
    }
-   .cardList {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0px 20px; 
-      justify-content: center;
-   }
+
+
+
+
+
+
+
+
+
+
+
+
