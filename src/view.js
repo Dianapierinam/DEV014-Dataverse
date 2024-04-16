@@ -2,9 +2,6 @@ export const renderItems = (data) => {
   const root = document.getElementById('root');
   const cardListElement = document.createElement('ul');
   cardListElement.classList.add('cardList');
-
-  //Aplicar el atributo al elemento li
-  //cardListElement.setAttribute('itemtype')
   
   // Verifica si el nodo 'root' tiene hijos y los elimina si existen
   if (root.hasChildNodes()) {
@@ -33,4 +30,5 @@ export const renderItems = (data) => {
   root.appendChild(cardListElement);
   return cardListElement
 }
+
 

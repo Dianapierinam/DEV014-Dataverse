@@ -43,22 +43,24 @@ header {
 .gif {
    border: 10px solid #ccc;
 }
+
 .textpromedio {
    display: flex;
    align-items: center;
+   justify-content: center;
    text-align: center;
-   text-decoration: wavy;
-   font-size: 30px;
-   background-color:darkgoldenrod ;
-   text-transform: uppercase;
-   background-size: auto auto;
-   background-size: 200% auto;
-   height: 450px;
-   width: 450px;
    margin-left: 100px;
-   border-radius: 50%;
-   border: 3px solid #ccc;
-}
+   font-size: 30px;
+   background-color: rgba(0, 0, 0, 0.8); 
+   background-size: 200% auto;
+   height: 300px;
+   width: 450px;
+   border-radius: 20px; 
+   margin-top: 20px; 
+   color: #eabe3f;
+   box-shadow: 0 0 20px rgba(234, 190, 63, 1);
+ }
+ 
 
 .textpromedio-container {
    width: 80%;
@@ -88,10 +90,10 @@ nav {
    font-size: 30px;
    margin-left: 80px;
    color:white;;
-   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); /* Agrega sombra al nav */
+   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); 
    justify-content: center;
    font-family: 'londrina';
-   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Agrega sombra suave al texto */
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); 
 }
 
 .label-filtro {
@@ -130,12 +132,17 @@ nav {
 .tooltip {
    max-width: 50px;
    position: absolute; 
-   top: 60px;
-   right: 230px;
+   top: 80px;
+   right: 225px;
    cursor: pointer;
    font-size: 15px;
-   text-decoration:overline;
    color: black;
+   border-radius: 100%; 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   background-color: rgba(255, 255, 255, 0.5); 
+   padding: 5px; 
+   border: 1px solid white; 
+
  }
  
  .tooltip .tooltiptext {
@@ -147,8 +154,6 @@ nav {
    border-radius: 6px;
    padding: 5px 0;
    position: absolute;
-   left: 200%;
-   margin-left: -60px;
    opacity: 0;
    transition: opacity 0.3s;
  }
@@ -157,6 +162,7 @@ nav {
    visibility: visible;
    opacity: 1;
  }
+ 
 
 select{
    border: none;
@@ -263,6 +269,22 @@ display: none;
    padding: 0px 50px;
    margin-bottom: 30px;
 }
+
+
+#mostrar-mensaje{
+   display: none; 
+   color: white;
+   font-size: 50px;
+   width: auto;
+   height: 400px;
+   justify-content: center;
+   align-items: center;
+}
+
+#mostrar-mensaje.mostrar-mensaje {
+   display: flex; 
+}
+
 footer {
    background-color: #FFBD59;
    font-size: 15px;
