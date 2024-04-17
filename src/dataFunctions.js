@@ -12,29 +12,27 @@ export const sortData = (data, sortBy, sortOrder) => {
       return data.slice().sort((a, b) => b.name.localeCompare(a.name));
     }
   } else {
-    if (sortOrder === 'asc') {
-      return data.slice().sort((a, b) => a[sortBy] - b[sortBy]);
-    } else {
+    if (sortOrder === 'desc') {
       return data.slice().sort((a, b) => b[sortBy] - a[sortBy]);
+    } else {
+      return data.slice().sort((a, b) => a[sortBy] - b[sortBy]);
     }
   }
 }
-
 
 export const computeStats = (data) => {
   const validYears = data.map((item) => {
     const yearOfBirth = item.facts.yearOfBirth;
 
-    // Verificar si el año de nacimiento es válido
     if (yearOfBirth && !isNaN(yearOfBirth)) {
-      return parseInt(yearOfBirth); // Retornar el año de nacimiento como número
+      return parseInt(yearOfBirth); 
     }
-    return null; // Retornar null para los años de nacimiento inválidos
-  }).filter((year) => year !== null); // Filtrar los años de nacimiento válidos (no null)
+    return null; 
+  }).filter((year) => year !== null); 
 
   const totalPeople = validYears.length;
   const totalYearSum = validYears.reduce((sum, year) => {
-    sum += year; // Sumar el año de nacimiento al total
+    sum += year; 
     return sum;
   }, 0);
 

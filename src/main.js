@@ -12,16 +12,12 @@ const closeBtn = document.querySelector("#close-btn");
 const closeCheckbox = document.querySelector("#check");
 const owlButton = document.querySelector("#clearData");
 const calculationElement = document.querySelector('#calculation');
-const bootnretun = document.getElementById('return');
+const buttonReturn = document.getElementById('return');
 const textpromedio = document.getElementById('textpromedio');
 const mensaje = document.getElementById('mostrar-mensaje');
 
-
-
-
 //Carga inicial//
 renderItems(data);
-
 
 //eventos//
 selectFilter.addEventListener('change', (event) => onFilterChange(event));
@@ -29,22 +25,25 @@ selectFilterRaza.addEventListener('change', (event) => onFilterChange(event));
 sort.addEventListener('change', (event) => onFilterChange(event));
 closeBtn.addEventListener('click', closeFilter);
 document.addEventListener('DOMContentLoaded', showAverageYear);
-bootnretun.addEventListener('click', buttonReturn);
+buttonReturn.addEventListener('click', onReturn);
 owlButton.addEventListener('click', function() {
-  toggleMostrar('root', 'mostrar-data'); //Este es para mostrar y no mostrar la data
-  toggleMostrar("embedim--snow", "mostrar"); //Este es para mostrar y no mostrar la nieve
-  toggleMostrar("calculation", "mostrar-grafica"); //Este es para mostrar y no mostrar la gráfica
+  toggleMostrar('root', 'mostrar-data'); 
+  toggleMostrar("embedim--snow", "mostrar"); 
+  toggleMostrar("calculation", "mostrar-grafica"); 
   toggleMostrar("return","elpromedio");
-  toggleMostrar("mostrar-grafica","mostrar-mensaje");
+  toggleMostrar("mostrar-grafica", "mostrar-mensaje");
 
-  if(calculationElement.classList.contains("mostrar-mensaje")) {
-    removeClass(mensaje, "mostrar-mensaje");
-  } else {
+  const cardList = document.getElementById('card-list');
+
+
+  if(cardList.children.length === 0 && calculationElement.classList.length === 0) {
     addClass(mensaje, "mostrar-mensaje");
+  } else {
+    removeClass(mensaje, "mostrar-mensaje");
   }
 });
 
-function buttonReturn(){
+function onReturn(){
   owlButton.click();
 }
 
@@ -80,7 +79,6 @@ function showAverageYear() {
 }
 
 function onFilterChange(event) {
-  // Realizar acciones basadas en el evento recibido
   const datosFiltrados = filtrar(data);
   const datosOrdenados = sortData(datosFiltrados, 'name', event.target.value);
 
@@ -101,9 +99,6 @@ function filtrar() {
   if (selectFilterRaza.value) {
     datosFiltrados = filterData(datosFiltrados, 'raza', selectFilterRaza.value);
   }
-  
-  datosFiltrados = sortData(datosFiltrados, 'name', sort.value);
-
   return datosFiltrados;
 }
 
@@ -113,5 +108,6 @@ function borrarFiltros() {
   selectFilter.value = ""; 
   selectFilterRaza.value = ""; 
   sort.value = "";
+  removeClass(mensaje, "mostrar-mensaje");
   renderItems(data); 
 }
