@@ -41,7 +41,8 @@ header {
    margin: 100px 0px;
 }
 .gif {
-   border: 10px solid #ccc;
+   border-radius: 10px; 
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .textpromedio {
@@ -207,11 +208,11 @@ button:hover {
    display: inline-block; 
    width: 200px; 
    background-color: rgba(255, 255, 255, 0.8); 
-   transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
+   transition: transform 0.3s ease-in-out; 
    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 .card:hover {
-   transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba al pasar el mouse sobre ella */
+   transform: translateY(-5px);
    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .card img {
@@ -255,19 +256,23 @@ button:hover {
    object-fit: cover;
 }
 
- #return {
-display: none;
-}
+#return {
+   display: none;
+   background-color: #ccc;
+   color: #372e29;
+   font-size: 16px;
+   }
 
 #return.elpromedio {
    display: block;
+   
 
 } 
 .returnmobile{
    display: flex;
-   justify-content: flex-end;
    padding: 0px 50px;
    margin-bottom: 30px;
+   justify-content: center; 
 }
 
 
@@ -311,7 +316,7 @@ footer {
 .social-link {
    text-align: center; 
    padding: 0 100px 10px; 
-   flex: 1; /* Permite que los elementos ocupen el mismo espacio */
+   flex: 1; 
 }
 .contact {
    order: 2; 
@@ -446,21 +451,32 @@ footer {
          margin-top: 50px;
          margin-left: 0px;
       }
+      #mostrar-mensaje{
+         display: none; 
+         color: white;
+         font-size: 20px;
+         width: auto;
+         justify-content: center;
+         align-items: center;
+         margin-top: 200px;
+      }
+      
+      #mostrar-mensaje.mostrar-mensaje {
+         display: flex; 
+      }
 
       .returnmobile {
-         display: flex;
+         display: block;
          justify-content: flex-end;
-         padding: 0px 50px;
+         padding: 0px 100px;
          margin-bottom: 30px;
+         background-color: #ccc;
+         margin-top: 45%;
+         border-radius: 20px; 
+
       }
    
       footer {
          height: auto;
       }
    }
-
-
-
-
-
-
