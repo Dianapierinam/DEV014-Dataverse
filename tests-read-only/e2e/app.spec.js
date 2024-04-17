@@ -1,4 +1,5 @@
 // @ts-check
+// @ts-ignore
 import { test, expect } from '@playwright/test';
 
 test.describe('Pagina interraciones', () => {

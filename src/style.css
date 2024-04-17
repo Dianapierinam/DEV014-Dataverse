@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@font-face {
+   font-family: 'londrina';
+   src: url('fonts/LondrinaSolid-Regular.ttf') format('truetype');
+}
+* {
+   cursor: url('img/varita.png') 0 0, auto;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url("img/Fondo-Dataverse.jpeg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover; 
+}
+header {
+   text-align: center;
+   padding: 7px 0;
+}
+#embedim--snow {
+   display: none;
+}
+#embedim--snow.mostrar {
+   display: block;
+}
+#root {
+   display: none;
+}
+#root.mostrar-data {
+   display: block;
+}
+#calculation {
+   display: none;
+}
+
+#calculation.mostrar-grafica {
+   display: flex;
+   justify-content: center;
+   margin: 100px 0px;
+}
+.gif {
+   border: 10px solid #ccc;
+}
+
+.textpromedio {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin-left: 100px;
+   font-size: 30px;
+   background-color: rgba(0, 0, 0, 0.8); 
+   background-size: 200% auto;
+   height: 300px;
+   width: 450px;
+   border-radius: 20px; 
+   margin-top: 20px; 
+   color: #eabe3f;
+   box-shadow: 0 0 20px rgba(234, 190, 63, 1);
+ }
+ 
+
+.textpromedio-container {
+   width: 80%;
+   margin: auto;
+}
+
+.titulo img {
+   max-width: 400px; 
+}
+.cerrar-button {
+   display: none;
+}
+.check {
+   display: none;
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 7px 0px;
+   text-align: left;
+   width: 80%;
+   padding-left: 100px;
+   margin-top: -20px;
+   background-color:  #FFBD59;
+   border-radius: 20px;
+   height: 50px;
+   font-size: 30px;
+   margin-left: 80px;
+   color:white;;
+   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.9); 
+   justify-content: center;
+   font-family: 'londrina';
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); 
+}
+
+.label-filtro {
+   font-size: 25px !important;
+} 
+.checkbtn {
+   font-size: 30px;
+    color: blue;
+    float: right;
+    line-height: 100px;
+    margin-right: 5%;
+    cursor: pointer;
+    display: none;
+ }
+ .nav {
+   list-style: none;
+   padding: 0;
+   justify-content: center;
+   color: #372e29;
+}
+.navigation label {
+   font-size: 18px;
+}
+.navigation .filtro {
+   margin-left: 40px;
+}
+.buho img {
+   max-width: 110px;
+   position: absolute; 
+   top: 8px; 
+   right: 200px; 
+   padding: 0px;
+   cursor: pointer;
+}
+
+.tooltip {
+   max-width: 50px;
+   position: absolute; 
+   top: 80px;
+   right: 225px;
+   cursor: pointer;
+   font-size: 15px;
+   color: black;
+   border-radius: 100%; 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   background-color: rgba(255, 255, 255, 0.5); 
+   padding: 5px; 
+   border: 1px solid white; 
+
+ }
+ 
+ .tooltip .tooltiptext {
+   visibility: hidden;
+   width: 120px;
+   background-color: #555;
+   color: white;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;
+   position: absolute;
+   opacity: 0;
+   transition: opacity 0.3s;
+ }
+ 
+ .tooltip:hover .tooltiptext {
+   visibility: visible;
+   opacity: 1;
+ }
+ 
+
+select{
+   border: none;
+   color: #372e29;
+   background-color: #FFBD59;
+   font-family: Roboto Condensed;
+   font-size: 20px;
+   appearance: none;
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+   margin: 0 10px; 
+   cursor: pointer;
+}
+select:focus {
+   outline: none;
+}
+button {
+   background-color: #383C37;
+   color: white;
+   border: none;
+   padding: 15px 20px; 
+   border-radius: 20px;
+   top: 153px; 
+   right: 100px; 
+   font-family: Roboto Condensed;
+   cursor: pointer;
+}
+button:hover {
+   background-color: gray;
+   cursor: pointer;
+}
+button:hover {
+   background-color: gray;
+   cursor: pointer;
+}
+ 
+.card {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   margin-bottom: 20px;
+   display: inline-block; 
+   width: 200px; 
+   background-color: rgba(255, 255, 255, 0.8); 
+   transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
+   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+   transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba al pasar el mouse sobre ella */
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.card img {
+   width: 100%; 
+   height: auto;
+   border-radius: 5px;
+}
+.card h1 {
+   text-align: center;
+   font-family: "Merienda", cursive;
+}
+.card p {
+   margin-top: 10px;
+   font-size: 14px;
+   overflow: hidden; 
+   max-height: 80px; 
+   line-height: 20px; 
+   color: black; 
+   text-align: center;
+   font-family: "Merienda", cursive;
+}
+.card {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   margin-bottom: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   width: 300px;
+}
+.cardList {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 80px;
+   padding: 0px 180px;
+   justify-content: center;
+}
+.card img {
+   height: 400px;
+   width: 100%;
+   object-fit: cover;
+}
+
+ #return {
+display: none;
+}
+
+#return.elpromedio {
+   display: block;
+
+} 
+.returnmobile{
+   display: flex;
+   justify-content: flex-end;
+   padding: 0px 50px;
+   margin-bottom: 30px;
+}
+
+
+#mostrar-mensaje{
+   display: none; 
+   color: white;
+   font-size: 50px;
+   width: auto;
+   height: 400px;
+   justify-content: center;
+   align-items: center;
+}
+
+#mostrar-mensaje.mostrar-mensaje {
+   display: flex; 
+}
+
+footer {
+   background-color: #FFBD59;
+   font-size: 15px;
+   width: 100%;
+   height: 170px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #5d5d5d;
+   font-family: "Merienda", cursive;
+   position: relative; 
+   bottom: 0; 
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap; 
+}
+
+.pagina,
+.contact,
+.social-link {
+   text-align: center; 
+   padding: 0 100px 10px; 
+   flex: 1; /* Permite que los elementos ocupen el mismo espacio */
+}
+.contact {
+   order: 2; 
+}
+
+.pagina {
+   order: 1; 
+}
+
+.social-link {
+   order: 3; 
+}
+
+.pagina {
+  text-align: center; 
+  max-width: 700px; 
+}
+
+.footHarry {
+   height: 60px; 
+   margin-top: 25px;
+}
+
+.foot2 {
+   text-align: justify; 
+   max-width: 800px; 
+}
+
+.icono1 {
+   font-size: 24px; 
+   color: #946b2d; 
+   margin-right: 10px; 
+}
+
+.autores {
+   background-color: #5d5d5d;
+   width: 100%;
+   height: 50px;
+}
+.copyright {
+   text-align: center; 
+   color: white;
+   line-height: 50px; 
+}
+@media screen and (max-width: 768px) {
+   
+      .navigation {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: #FFBD59;
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: -100%;
+         margin: 0px;
+         padding: 0px;
+         transition: all .3s ease;
+      }
+      .buho img {
+         display: none;
+      }
+      .titulo img {
+         max-width: 150px;
+      }
+   
+      .check {
+          display: none; 
+      }
+      .cerrar-button {
+         display: block;
+         font-family: auto;
+         position: absolute;
+         top: 20px;
+         right: 20px;
+      }
+   
+      .checkbtn {
+         display: block;
+         cursor: pointer;
+         float: right;
+         margin-right: 20px;
+         margin-top: 20px;
+      }
+   
+      .checkbtn img {
+         background-color: #ccc;
+         position: absolute;
+         top: 30px;
+         right: 30px;
+         width: 24px;
+         height: auto;
+      }
+   
+      .check:checked ~ .navigation {
+         left: 0;
+      } 
+   
+      .navigation .filtro {
+         display: flex;
+         justify-content: space-between;
+         width: 80%;
+         margin: 5px 0px;
+      }
+   
+      .navigation .filtro select {
+         width: 150px;
+      }
+   
+      .navigation button {
+         margin-top: 20px;
+      }
+   
+      .label-filtro {
+         font-size: 14px;
+         margin-bottom: 8px;
+      }
+      .cardList {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 0px 20px; 
+         justify-content: center;
+      }
+      #calculation.mostrar-grafica {
+         flex-wrap: wrap;
+      }
+      .textpromedio {
+         width: 300px;
+         height: 300px;
+         font-size: 20px;
+         margin-top: 50px;
+         margin-left: 0px;
+      }
+
+      .returnmobile {
+         display: flex;
+         justify-content: flex-end;
+         padding: 0px 50px;
+         margin-bottom: 30px;
+      }
+   
+      footer {
+         height: auto;
+      }
+   }
+
+
+
+
+
+

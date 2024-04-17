@@ -48,5 +48,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }

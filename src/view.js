@@ -1,6 +1,34 @@
 export const renderItems = (data) => {
-  console.log(data)
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
-  return 'example';
-};
+  const root = document.getElementById('root');
+  const cardListElement = document.createElement('ul');
+  cardListElement.classList.add('cardList');
+  
+  // Verifica si el nodo 'root' tiene hijos y los elimina si existen
+  if (root.hasChildNodes()) {
+    root.innerHTML = ''; // Elimina todos los hijos del nodo 'root'
+  }
+
+  data.forEach(personaje => { 
+    const cardElement = document.createElement('li');
+    const liName = document.createElement('h1');
+    const liImg = document.createElement('img');
+    const liDescription = document.createElement('p');
+    cardElement.setAttribute('itemtype', 'Person');
+    cardElement.setAttribute('itemscope', '');
+    liName.textContent = personaje.name;
+    liDescription.textContent = personaje.shortDescription;
+    liImg.src = personaje.imageUrl;
+  
+    cardElement.classList.add('card');
+    
+    cardElement.appendChild(liImg);
+    cardElement.appendChild(liName);
+    cardElement.appendChild(liDescription);
+    
+    cardListElement.appendChild(cardElement);
+  });
+  root.appendChild(cardListElement);
+  return cardListElement
+}
+
 

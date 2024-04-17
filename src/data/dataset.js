@@ -1,378 +1,297 @@
-export default [
+export default [ //todo esto es un arrey de objetos
   {
-    "id": "ada-lovelace",
-    "name": "Ada Lovelace",
-    "shortDescription": "Pionera en la programación, primera programadora de la historia.",
-    "description": "Una visionaria matemática británica del siglo XIX, es aclamada como la primera programadora de la historia. Su colaboración con Charles Babbage en la creación de la Máquina Analítica la llevó a desarrollar algoritmos, incluyendo el famoso \"algoritmo de Bernoulli\", destinados a ser procesados por una máquina. Su visión pionera la convirtió en una figura fundamental en la informática y la inteligencia artificial. Lovelace demostró que las computadoras podían ir más allá de simples cálculos matemáticos, anticipando un mundo donde la programación sería esencial en la resolución de problemas complejos, dejando una huella imborrable en la ciencia y la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/ada-lovelace.jpg",
+    "id": "harry_potter",
+    "name": "Harry Potter",
+    "shortDescription": "El niño que vivió, famoso por derrotar a Lord Voldemort.",
+    "description": "Harry Potter, nacido el 31 de julio de 1980, es conocido en el mundo mágico como el 'niño que vivió'. Fue famoso por sobrevivir al intento de asesinato de Lord Voldemort cuando era solo un bebé. Asistió a Hogwarts y fue seleccionado en Gryffindor. Harry es conocido por su valentía, lealtad y habilidad excepcional para la magia. Durante su tiempo en la escuela, fundó la Armada de Dumbledore para luchar contra las injusticias. Su coraje lo llevó a derrotar a Voldemort, poniendo fin a la Segunda Guerra de los Magos.",
+    "imageUrl": "https://images5.fanpop.com/image/photos/25600000/Harry-Potter-Wallpaper-harry-potter-25653343-1024-768.jpg",
     "facts": {
-      "yearOfBirth": "1815",
-      "yearOfDeath": "1852",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Ciencia de la Computación"
+        "casaDeOrigen": "gryffindor",
+        "raza": "sangreMestiza",
+        "yearOfBirth": "1980"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/genera-una-imagen-de-ada-lovelace2c-la-primera-prog/650a1eff8ff04b88833d5cdef0309441"
-    }
   },
   {
-    "id": "emmy-noether",
-    "name": "Emmy Noether",
-    "shortDescription": "Matemática destacada, teorema fundamental en álgebra abstracta.",
-    "description": "Una brillante matemática alemana, revolucionó la física teórica con sus contribuciones al teorema de conservación de la energía y el teorema de Noether, fundamentales en la teoría de la relatividad y la mecánica cuántica. A pesar de los obstáculos que enfrentó como mujer en la academia, sus investigaciones en álgebra abstracta y teoría de grupos son fundamentales en la física moderna. Su capacidad para unificar conceptos matemáticos y físicos marcó un hito en la historia de la ciencia, allanando el camino para futuras generaciones de científicas.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/emmy-noether.jpg",
-    "facts": {
-      "yearOfBirth": "1882",
-      "yearOfDeath": "1935",
-      "birthPlace": "Erlangen, Alemania",
-      "mainField": "Matemáticas"
+    "id": "hermione_granger",
+        "name": "Hermione Granger",
+        "shortDescription": "Inteligente y valiente, una de las mejores amigas de Harry Potter.",
+        "description": "Hermione Granger, nacida el 19 de septiembre de 1979, es conocida por su inteligencia y valentía. Es una bruja nacida de padres muggles, pero demostró un talento excepcional en la magia desde una edad temprana. Fue seleccionada en Gryffindor junto a Harry y Ron. Su dedicación al estudio y su habilidad para resolver problemas fueron cruciales en la lucha contra Lord Voldemort. Hermione es una defensora de los derechos de los elfos domésticos y fundó la Sociedad de la Defensa de los Elfos Domésticos en Hogwarts.",
+        "imageUrl": "https://i.pinimg.com/originals/8f/9c/8d/8f9c8d8bfa9ca6b4628a5096835f8444.jpg",
+        "facts": {
+            "casaDeOrigen": "gryffindor",
+            "raza": "sangreSucia",
+            "yearOfBirth": "1979"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-an-image-of-of-a-german-woman2c-a-pioneering/6510ddb1e8254b928b8f8f1d5e95fea4"
-    }
+
   },
   {
-    "id": "hypatia-de-alejandria",
-    "name": "Hypatia de Alejandría",
-    "shortDescription": "Matemática y filósofa en la antigua Alejandría.",
-    "description": "Filósofa y matemática en la antigua Alejandría, desafió las normas de género de su época al destacar en una sociedad dominada por hombres. Su legado incluye importantes contribuciones a la geometría y la astronomía, así como su destacado papel como maestra y defensora del conocimiento en una época de agitación política. Hypatia demostró que las mujeres podían sobresalir en campos intelectuales y su valentía al mantener sus creencias filosóficas la convierte en un símbolo de resistencia y sabiduría en la historia de la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hypatia-de-alejandria.jpg",
-    "facts": {
-      "yearOfBirth": "circa 360",
-      "yearOfDeath": "415",
-      "birthPlace": "Alejandría, Egipto",
-      "mainField": "Matemáticas, Filosofía"
+    "id": "ron_weasley",
+        "name": "Ron Weasley",
+        "shortDescription": "Leal y valiente, mejor amigo de Harry Potter y esposo de Hermione Granger.",
+        "description": "Ronald 'Ron' Weasley, nacido el 1 de marzo de 1980, es conocido por su lealtad y valentía. Es el sexto hijo de la familia Weasley y siempre ha vivido bajo la sombra de sus hermanos mayores. A pesar de esto, demostró ser un amigo leal y valiente, acompañando a Harry en sus aventuras desde el primer día en Hogwarts. Ron es conocido por su humor y su amor por la comida. Después de la Segunda Guerra de los Magos, se convirtió en Auror y más tarde en socio en la tienda de bromas Weasley's Wizard Wheezes.",
+        "imageUrl": "https://images4.fanpop.com/image/photos/24400000/Harry-Potter-Wallpaper-harry-potter-24478353-1024-768.jpg",
+        "facts": {
+            "casaDeOrigen": "gryffindor",
+            "raza": "sangrePura",
+            "yearOfBirth": "1980"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-a-vivid-digital-artwork-or-painting-that-de/6510df0ebe1a4807af22175452761e1a"
-    }
+    
   },
   {
-    "id": "marjorie-lee-browne",
-    "name": "Marjorie Lee Browne",
-    "shortDescription": "Matemática, contribuyó a la teoría de números.",
-    "description": "Matemática estadounidense, destacó en una época en la que las mujeres afroamericanas enfrentaban múltiples barreras en la educación superior. No solo obtuvo su doctorado en matemáticas, sino que también se convirtió en una destacada educadora, promoviendo la diversidad en las ciencias matemáticas y desafiando la discriminación racial y de género. Su compromiso con la educación y su capacidad para inspirar a futuras generaciones la convierten en un modelo a seguir para las mujeres en la ciencia, dejando una huella perdurable en la historia académica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjorie-lee-browne.jpg",
-    "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "1979",
-      "birthPlace": "Memphis, Estados Unidos",
-      "mainField": "Matemáticas"
+    "id": "albus_dumbledore",
+        "name": "Albus Dumbledore",
+        "shortDescription": "El director de Hogwarts, uno de los magos más poderosos de su tiempo.",
+        "description": "Albus Percival Wulfric Brian Dumbledore fue uno de los magos más destacados de su época y director de Hogwarts durante muchos años. Nació en 1881 y fue conocido por su sabiduría, compasión y habilidad excepcional en la magia. Como fundador de la Orden del Fénix, lideró la resistencia contra Lord Voldemort durante la Primera y la Segunda Guerra de los Magos. Dumbledore poseía la Varita de Saúco y la Piedra de la Resurrección. Aunque tenía sus propios errores, su deseo de redimirse y proteger a los demás fue su legado más duradero.",
+        "imageUrl": "https://i.pinimg.com/originals/59/cc/f1/59ccf12fd60f51a21af221ab2f7729b1.jpg",
+        "facts": {
+            "casaDeOrigen": "gryffindor",
+            "raza": "sangreMestiza",
+            "yearOfBirth": "1881"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/design-an-inspiring-and-historically-accurate-imag/6510df7e7bb745f69d67f695441607a8"
-    }
   },
   {
-    "id": "shakuntala-devi",
-    "name": "Shakuntala Devi",
-    "shortDescription": "Matemática prodigio, conocida como la 'Calculadora Humana'.",
-    "description": "Conocida como \"la bruja de las matemáticas\" de la India, dejó una marca indeleble en el mundo de los números. Su capacidad mental asombrosa la llevó a resolver complejos cálculos matemáticos mentalmente en cuestión de segundos, estableciendo récords mundiales. Además de su talento innato, Devi promovió activamente la educación matemática y luchó por la igualdad de género en un país donde las mujeres enfrentaban desafíos en la ciencia y la educación. Su legado destaca el poder de la mente humana y la importancia de la igualdad de oportunidades en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shakuntala-devi.jpg",
+    "id": "severus_snape",
+    "name": "Severus Snape",
+    "shortDescription": "Profesor de Pociones en Hogwarts, con una historia compleja y una lealtad ambigua.",
+    "description": "Severus Snape, nacido el 9 de enero de 1960, fue un personaje con una historia compleja y una lealtad ambigua. A pesar de sus acciones aparentemente malvadas, Snape jugó un papel crucial en la derrota de Lord Voldemort. Siendo un miembro de la Orden del Fénix, trabajó como espía dentro de las filas de los mortífagos. Su amor no correspondido por Lily Potter lo llevó a proteger a su hijo, Harry, a pesar de su antipatía hacia él. Snape demostró que la redención y el sacrificio pueden venir de lugares inesperados.",
+    "imageUrl": "https://www.chelseamamma.co.uk/wp-content/uploads/2016/12/8a9ebc30fdb2217fc0532de8562c6a9f-1.jpg",
     "facts": {
-      "yearOfBirth": "1929",
-      "yearOfDeath": "2013",
-      "birthPlace": "Bangalore, India",
-      "mainField": "Matemáticas"
+        "casaDeOrigen": "slytherin",
+        "raza": "sangreMestiza",
+        "yearOfBirth": "1960"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
-    }
   },
   {
-    "id": "sofia-kovalevskaya",
-    "name": "Sofia Kovalevskaya",
-    "shortDescription": "Matemática y escritora, contribuyó a la teoría de funciones.",
-    "description": "Matemática rusa del siglo XIX, dejó una marca indeleble en la ciencia del siglo XIX al desafiar las barreras de género. Como matemática rusa, superó las restricciones sociales de su época para convertirse en la primera mujer en obtener un doctorado en matemáticas en Europa. Sus contribuciones a la teoría de las ecuaciones diferenciales y la mecánica revolucionaron la disciplina, abriendo nuevas perspectivas en el análisis matemático. Su destacada membresía en la Academia de Ciencias de Suecia marcó un hito en la historia de las mujeres en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sofia-kovalevskaya.jpg",
+    "id": "remus_lupin",
+    "name": "Remus Lupin",
+    "shortDescription": "Profesor de Defensa Contra las Artes Oscuras y un hombre lobo.",
+    "description": "Remus John Lupin, nacido el 10 de marzo de 1960, fue un mago y licántropo. A pesar de su condición de hombre lobo, Lupin fue un estudiante y luego un profesor excepcional en Hogwarts. Demostró ser un amigo leal y valiente, especialmente durante la Segunda Guerra de los Magos. Lupin luchó por los derechos de los hombres lobo y se unió a la Orden del Fénix para luchar contra Lord Voldemort. Su amor por Nymphadora Tonks y su hijo, Teddy, lo inspiró a luchar por un mundo mejor.",
+    "imageUrl": "https://media.harrypotterfanzone.com/remus-lupin-prisoner-of-azkaban-portrait-2.jpg",
     "facts": {
-      "yearOfBirth": "1850",
-      "yearOfDeath": "1891",
-      "birthPlace": "Moscú, Rusia",
-      "mainField": "Matemáticas"
+        "casaDeOrigen": "gryffindor",
+        "raza": "sangreMestiza",
+        "yearOfBirth": "1960"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
-    }
+  
   },
   {
-    "id": "yoko-shimomura",
-    "name": "Yoko Shimomura",
-    "shortDescription": "Compositora de música, destacada en la industria de los videojuegos.",
-    "description": "Compositora japonesa, es una figura destacada en la ciencia de la música y el arte sonoro. Aunque no se dedica a la ciencia en el sentido tradicional, su trabajo en la composición musical ha requerido un profundo entendimiento de la teoría musical y la tecnología de audio. Ha contribuido de manera significativa a la industria de los videojuegos, componiendo icónicas bandas sonoras que han enriquecido la experiencia de juego. Su éxito en un campo donde las mujeres estaban subrepresentadas la convierte en un modelo a seguir, incluso en campos no convencionales como la composición musical.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/yoko-shimomura.jpg",
-    "facts": {
-      "yearOfBirth": "1967",
-      "birthPlace": "Hyogo, Japón",
-      "mainField": "Composición Musical, Video Juegos"
+    "id": "lord_voldemort",
+        "name": "Lord Voldemort (Tom Riddle)",
+        "shortDescription": "Uno de los magos más oscuros de todos los tiempos, cuyo verdadero nombre es Tom Riddle.",
+        "description": "Lord Voldemort, nacido como Tom Marvolo Riddle, es uno de los magos más oscuros de todos los tiempos. Surgió como una amenaza durante la Primera y Segunda Guerra de los Magos, siendo conocido por su ambición desmedida y su búsqueda de la inmortalidad. Riddle fue responsable de la muerte de los padres de Harry Potter y de una ola de terror en el mundo mágico. Su nombre se convirtió en sinónimo de miedo y sus seguidores eran temidos por su crueldad y fanatismo.",
+        "imageUrl": "https://i.pinimg.com/736x/9a/19/b7/9a19b77081487a97f3e91700c064763b.jpg",
+        "facts": {
+            "casaDeOrigen": "slytherin",
+            "raza": "sangreMestiza",
+            "yearOfBirth": "1926"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/yoko-shimomura-making-music-for-a-video-game-in-19/6510e40dd1eb45d0906e8c1f4bb601d3"
-    }
   },
   {
-    "id": "maryam-mirzakhani",
-    "name": "Maryam Mirzakhani",
-    "shortDescription": "Matemática, ganadora del Premio Fields.",
-    "description": "Matemática iraní, hizo historia al convertirse en la primera mujer en ganar la Medalla Fields, el premio más prestigioso en matemáticas. Sus investigaciones en la geometría de superficies y la teoría de las superficies de Riemann han tenido un impacto duradero en la matemática pura. A lo largo de su carrera, Mirzakhani inspiró a muchas mujeres a perseguir carreras en ciencia y matemáticas, derribando las barreras de género. Su enfoque innovador y su capacidad para resolver problemas complejos la convierten en un modelo a seguir para la comunidad científica y en un símbolo de la excelencia matemática.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maryam-mirzakhani.jpg",
-    "facts": {
-      "yearOfBirth": "1977",
-      "yearOfDeath": "2017",
-      "birthPlace": "Teherán, Irán",
-      "mainField": "Matemáticas"
+    "id": "rubeus_hagrid",
+        "name": "Rubeus Hagrid",
+        "shortDescription": "Guardián de las Llaves y Terrenos de Hogwarts, amante de las criaturas mágicas.",
+        "description": "Rubeus Hagrid, conocido simplemente como Hagrid, es un semi-gigante con un corazón de oro. Trabajó como Guardián de las Llaves y Terrenos de Hogwarts, presentando a Harry Potter al mundo mágico. A pesar de su apariencia intimidante, Hagrid es gentil y cariñoso, especialmente con las criaturas mágicas, que adora. A lo largo de los años, su lealtad hacia Dumbledore y los amigos de Harry lo llevó a enfrentarse a grandes peligros para protegerlos. Hagrid es una figura paterna para muchos y un símbolo de bondad y coraje.",
+        "imageUrl": "https://wl-adme.cf.tsp.li/resize/728x/jpg/88a/250/7dcafe567bae6dd46e2c16560c.jpg",
+        "facts": {
+            "casaDeOrigen": "gryffindor",
+            "raza": "semiGigante",
+            "yearOfBirth": "1928"
     },
-    "extraInfo": {
-      "imageSource": "https://chalkdustmagazine.com/features/mathematics-maryam-mirzakhani/"
-    }
   },
   {
-    "id": "adele-goldberg",
-    "name": "Adele Goldberg",
-    "shortDescription": "Informática pionera, co-creadora del lenguaje de programación Smalltalk.",
-    "description": "Informática estadounidense reconocida por su influyente trabajo en la investigación y desarrollo de la programación orientada a objetos. Su contribución más destacada es la creación del lenguaje de programación Smalltalk, que revolucionó la forma en que se desarrollan software y sistemas informáticos. Goldberg ha sido una defensora incansable de la usabilidad y la accesibilidad en la informática, asegurando que las aplicaciones informáticas sean más amigables para los usuarios. Su trabajo ha allanado el camino para una programación más intuitiva y eficiente, y su legado perdura en la industria de la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/adele-goldberg.jpg",
+    "id": "sirius_black",
+    "name": "Sirius Black",
+    "shortDescription": "El padrino de Harry Potter, un animago y miembro de la familia Black.",
+    "description": "Sirius Black, nacido en 1959, fue el padrino de Harry Potter y un fiel amigo de sus padres. Fue injustamente encarcelado en Azkaban por el asesinato de doce muggles y traición a James y Lily Potter. Como un animago, podía transformarse en un perro negro. Después de escapar de Azkaban, luchó contra Lord Voldemort y su lealtad hacia la Orden del Fénix nunca vaciló. A pesar de su trágico destino, Sirius fue recordado como un hombre valiente que sacrificó su libertad por la causa del bien.",
+    "imageUrl": "https://media.harrypotterfanzone.com/sirius-black-order-of-the-phoenix-portrait-3.jpg",
     "facts": {
-      "yearOfBirth": "1945",
-      "birthPlace": "Chicago, Estados Unidos",
-      "mainField": "Ciencias de la Computación"
+        "casaDeOrigen": "gryffindor",
+        "raza": "sangrePura",
+        "yearOfBirth": "1959"
     },
-    "extraInfo": {
-      "imageSource": "https://pionerasinformaticas.ujaen.es/en/computer-women-pioneers/adele-goldberg-en"
-    }
   },
   {
-    "id": "barbara-liskov",
-    "name": "Barbara Liskov",
-    "shortDescription": "Científica de la computación, pionera en programación orientada a objetos.",
-    "description": "Pionera de la informática, es conocida por su trabajo en la programación y la arquitectura de sistemas distribuidos. Fue la primera mujer en obtener un doctorado en ciencias de la computación en el Instituto de Tecnología de Stanford y desarrolló el lenguaje de programación CLU, que estableció fundamentos para la programación orientada a objetos. Liskov ha dejado una marca indeleble en la industria de la tecnología al liderar avances en sistemas de almacenamiento y seguridad informática. Su enfoque en la fiabilidad y la robustez ha influido en el diseño de sistemas críticos en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/barbara-liskov.jpg",
+    "id": "ginny_weasley", 
+    "name": "Ginny Weasley",
+    "shortDescription": "Valiente y talentosa jugadora de quidditch, hermana menor de Ron Weasley.",
+    "description": "Ginevra 'Ginny' Molly Weasley es conocida por su valentía y talento en el campo de quidditch. Nacida el 11 de agosto de 1981, Ginny es la única hija de la familia Weasley y la más joven de los siete hermanos. A lo largo de su tiempo en Hogwarts, demostró ser una bruja poderosa y decidida. Fue seleccionada en Gryffindor y se convirtió en la buscadora del equipo de quidditch de la casa. Su valentía se demostró en la Batalla de Hogwarts, donde luchó contra los mortífagos.",
+    "imageUrl": "https://images6.fanpop.com/image/photos/34100000/Ginny-Weasley-Wallpaper-harry-potter-34185846-1280-800.jpg",
     "facts": {
-      "yearOfBirth": "1939",
-      "birthPlace": "Los Angeles, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+        "casaDeOrigen": "gryffindor",
+        "raza": "sangrePura",
+        "yearOfBirth": "1981"
     },
-    "extraInfo": {
-      "imageSource": "https://medium.com/a-computer-of-ones-own/barbara-liskov-inventor-of-abstract-data-types-9f8908fdcf86"
-    }
   },
   {
-    "id": "grace-hopper",
-    "name": "Grace Hopper",
-    "shortDescription": "Científica de la computación, creadora del primer compilador.",
-    "description": "Una de las pioneras de la informática, es famosa por su contribución al desarrollo del primer compilador y al lenguaje de programación COBOL. Además, desafió los estereotipos de género en la década de 1940 al unirse a la Marina de los Estados Unidos y convertirse en la primera programadora de la computadora Harvard Mark I. Su legado abarca la creación de conceptos cruciales como la \"depuración de software\" y su influencia en el desarrollo de la informática moderna, estableciendo estándares para la programación de alto nivel y la innovación tecnológica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/grace-hopper.jpg",
+    "id": "luna_lovegood",
+    "name": "Luna Lovegood",
+    "shortDescription": "Extravagante y única, conocida por su singularidad y creencia en las criaturas mágicas.",
+    "description": "Luna Lovegood, nacida el 13 de febrero de 1981, es conocida por su singularidad y creencia en lo extraordinario. Luna es una bruja inusual con un espíritu libre y una mente abierta. Fue seleccionada en Ravenclaw por su inteligencia y originalidad. A pesar de ser marginada por otros estudiantes debido a sus creencias peculiares, Luna nunca perdió su optimismo ni su valentía. Se unió a la Armada de Dumbledore y luchó valientemente en la Batalla de Hogwarts. Después de la guerra, se convirtió en una destacada naturalista mágica.",
+    "imageUrl": "https://wallpapercave.com/wp/wp1921651.jpg",
     "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1992",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+        "casaDeOrigen": "ravenclaw",
+        "raza": "sangrePura",
+        "yearOfBirth": "1981"
     },
-    "extraInfo": {
-      "imageSource": "https://photos.com/featured/grace-hopper-with-early-computer-bettmann.html"
-    }
   },
   {
-    "id": "margaret-hamilton",
-    "name": "Margaret Hamilton",
-    "shortDescription": "Científica de la computación, lideró desarrollo de software para Apollo 11.",
-    "description": "Destacada científica de la computación que desempeñó un papel fundamental en el programa Apollo de la NASA. Fue directora de la División de Ingeniería de Software en el Laboratorio de Instrumentación del MIT, donde desarrolló el concepto de \"ingeniería de software\". Su liderazgo en el desarrollo del software de vuelo para las misiones Apollo fue fundamental para el éxito de la llegada del hombre a la Luna. Hamilton es un ejemplo de cómo la tecnología y la ciencia pueden alcanzar logros extraordinarios cuando se combinan con un enfoque innovador y una visión audaz.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/margaret-hamilton.jpg",
+    "id": "neville_longbottom",
+    "name": "Neville Longbottom",
+    "shortDescription": "Leal y valiente",
+    "description": "Neville Longbottom es un estudiante de Gryffindor en el Colegio Hogwarts de Magia y Hechicería. Aunque inicialmente se le consideraba torpe y despistado, Neville demostró ser valiente y determinado, especialmente durante la Segunda Guerra Mágica. Se destacó por su papel en la Batalla de Hogwarts, donde lideró a sus compañeros de casa contra los seguidores de Lord Voldemort. Después de la guerra, se convirtió en profesor en Hogwarts, enseñando Herbología. Al regresar a Hogwarts, Neville se encontró con un ambiente diferente al que recordaba, pero también había un sentido de renovación y esperanza.",
+    "imageUrl": "https://wallpapercave.com/wp/wp4567115.jpg",
     "facts": {
-      "yearOfBirth": "1936",
-      "birthPlace": "Paoli, Indiana, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+        "casaDeOrigen": "gryffindor",
+        "raza": "sangrePura",
+        "yearOfBirth": "1980"
     },
-    "extraInfo": {
-      "imageSource": "https://odetta.ai/blogs/margaret-hamilton-the-first-software-engineer"
-    }
   },
   {
-    "id": "radia-perlman",
-    "name": "Radia Perlman",
-    "shortDescription": "Ingeniera de redes, inventora del algoritmo Spanning Tree.",
-    "description": "Científica de la computación estadounidense, ha dejado una marca indeleble en el mundo de las redes informáticas y la seguridad. Conocida como \"la madre de Internet\", su invención del algoritmo Spanning Tree Protocol (STP) revolucionó la conectividad de redes y sentó las bases para la infraestructura de Internet moderna. A pesar de operar en un campo dominado por hombres, Perlman ha demostrado que las mujeres pueden liderar avances tecnológicos vitales. Su compromiso con la resiliencia de las redes y la ciberseguridad ha influido en la estabilidad y confiabilidad de la comunicación en línea.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/radia-perlman.jpg",
-    "facts": {
-      "yearOfBirth": "1951",
-      "birthPlace": "Portsmouth, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+    "id": "fred_weasley",
+        "name": "Fred Weasley",
+        "shortDescription": "Travieso bromista",
+        "description": "Fred Weasley, junto con su hermano gemelo George, son conocidos por sus travesuras y su ingenio en Hogwarts. Ambos cofundaron, una tienda de bromas y travesuras en el Callejón Diagon. Durante la Segunda Guerra Mágica, Fred luchó valientemente junto a su familia y amigos en la Batalla de Hogwarts, donde lamentablemente perdió la vida,. La pérdida de Fred dejó un vacío palpable en la comunidad pero Su espíritu juguetón y su amor por la diversión lo convirtieron en un querido miembro de la comunidad mágica.",
+        "imageUrl": "https://images.hobbydb.com/processed_uploads/subject_photo/subject_photo/image/29898/1503525439-20754-6187/FRE_large.jpg",
+        "facts": {
+            "casaDeOrigen": "gryffindor",
+            "raza": "sangrePura",
+            "yearOfBirth": "1978"
     },
-    "extraInfo": {
-      "imageSource": "https://hackaday.com/2018/05/29/spanning-the-tree-dr-radia-perlman-untangling-networks/"
-    }
   },
   {
-    "id": "shafi-goldwasser",
-    "name": "Shafi Goldwasser",
-    "shortDescription": "Científica de la computación, ganadora del Premio Turing.",
-    "description": "Es una destacada criptógrafa y científica de la computación que ha contribuido significativamente a la teoría de la computación y la seguridad de la información. Su trabajo en criptografía de probabilidad y complejidad computacional ha sentado las bases para la seguridad en línea y la privacidad de datos en un mundo cada vez más digitalizado. Goldwasser es un ejemplo de cómo la ciencia de la computación puede abordar desafíos contemporáneos y proteger la información en la era de la información.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shafi-goldwasser.jpg",
+    "id": "George_Weasley",
+    "name": "George Weasley",
+    "shortDescription": "Bromista gemelo",
+    "description": "George Weasley, gemelo idéntico de Fred Weasley, compartió con su hermano una pasión por las bromas y travesuras en Hogwarts. Juntos fundaron Gemelos Weasley, una tienda exitosa en el Callejón Diagon. La Segunda Guerra Mágica dejó una marca indeleble en George, especialmente tras la pérdida de su hermano Fred en la Batalla de Hogwarts. A pesar de la tragedia, continuó con el negocio familiar y, con el tiempo, encontró la manera de volver a sonreír. Aunque la pérdida de su hermano siempre lo acompañaría, George demostró que el amor y la camaradería pueden superar incluso los momentos más oscuros.",
+    "imageUrl": "https://i.pinimg.com/1200x/18/73/e5/1873e585e1772c3353deb903a845f62e.jpg",
     "facts": {
-      "yearOfBirth": "1958",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+        "casaDeOrigen": "gryffindor",
+        "raza": "sangrePura",
+        "yearOfBirth": "1978"
     },
-    "extraInfo": {
-      "imageSource": "https://www.jahresbericht2019.unibe.ch/successes_2019/einstein_lectures/index_eng.html"
-    }
   },
   {
-    "id": "chien-shiung-wu",
-    "name": "Chien-Shiung Wu",
-    "shortDescription": "Física experimental, contribuyó a la física nuclear.",
-    "description": "Física experimental de origen chino, desafiando los prejuicios de género y nacionalidad, realizó experimentos fundamentales en física de partículas y contribuyó significativamente a la comprensión de la desintegración beta. Su famoso experimento \"Wu\" refutó la paridad en la física de partículas, lo que cambió la forma en que los científicos comprenden las fuerzas fundamentales de la naturaleza. Wu demostró que el talento y la perseverancia pueden superar cualquier barrera, y su legado sigue siendo un faro de inspiración para científicas en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/chien-shiung-wu.jpg",
+    "id": "Draco_Malfoy", 
+    "name": "Draco Malfoy",
+    "shortDescription": "Slytherin arrogante",
+    "description": "Draco Malfoy, un estudiante de Slytherin en Hogwarts, es conocido por ser el rival de Harry Potter. Proviene de una familia de sangre pura y fue criado con creencias de sangre purista. Aunque inicialmente fue un antagonista en la vida de Harry, Draco enfrentó conflictos internos y presiones familiares durante la Segunda Guerra Mágica. Después de la guerra, se alejó de las creencias de su familia y encontró su propio camino en el mundo mágico. Esta evolución muestra una profundidad en su personaje.",
+    "imageUrl": "https://images5.fanpop.com/image/photos/25500000/Draco-Malfoy-Wallpaper-draco-malfoy-25527029-1024-768.jpg",
     "facts": {
-      "yearOfBirth": "1912",
-      "yearOfDeath": "1997",
-      "birthPlace": "Liuhe, Taicang, China",
-      "mainField": "Física"
+        "casaDeOrigen": "slytherin",
+        "raza": "sangrePura",
+        "yearOfBirth": "1980"
     },
-    "extraInfo": {
-      "imageSource": "https://www.thoughtco.com/chien-shiung-wu-biography-3530366"
-    }
   },
   {
-    "id": "hedy-lamarr",
-    "name": "Hedy Lamarr",
-    "shortDescription": "Actriz e inventora, contribuyó al desarrollo de la tecnología de espectro ensanchado.",
-    "description": "Actriz austroamericana y científica, fue una mente brillante en la intersección de la tecnología y el entretenimiento. Junto con el compositor George Antheil, inventó un sistema de comunicación secreta durante la Segunda Guerra Mundial que sentó las bases para la tecnología de espectro ensanchado y la comunicación inalámbrica moderna. Lamarr demostró que las mujeres pueden destacar tanto en el cine como en la ciencia, y su legado como inventora ha sido fundamental para el desarrollo de la tecnología de comunicación inalámbrica que usamos en la actualidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hedy-lamarr.jpg",
-    "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "2000",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Actuación, Física"
+    "id": "bellatrix_lestrange",
+        "name": "Bellatrix Lestrange",
+        "shortDescription": "Devota seguidora de Voldemort",
+        "description": "Bellatrix Lestrange, miembro de la familia Black y devota seguidora de Lord Voldemort, es conocida por su crueldad y lealtad fanática hacia el Señor Tenebroso. Participó en numerosos actos de violencia durante la Primera y Segunda Guerra Mágica, incluyendo la tortura de Neville Longbottom y la muerte de su prima Sirius Black. Bellatrix era temida por su habilidad en las Artes Oscuras y su devoción ciega a Voldemort, lo que la convirtió en una de las brujas más peligrosas de su tiempo.",
+        "imageUrl": "https://i.pinimg.com/originals/57/a1/9b/57a19b9c54e6376da104bcca8ca9bc53.jpg",
+        "facts": {
+            "casaDeOrigen": "slytherin",
+            "raza": "sangrePura",
+            "yearOfBirth": "1951"
     },
-    "extraInfo": {
-      "imageSource": "https://www.sparkfun.com/news/6147"
-    }
   },
   {
-    "id": "maria-goeppert-mayer",
-    "name": "Maria Goeppert Mayer",
-    "shortDescription": "Física teórica, ganadora del Premio Nobel de Física.",
-    "description": "Física teórica alemana-estadounidense, dejó una profunda huella en la física nuclear y la mecánica cuántica. Fue la segunda mujer en recibir el Premio Nobel de Física y su trabajo pionero en la estructura de capas nucleares revolucionó nuestra comprensión de los núcleos atómicos. A pesar de las barreras de género en la academia, su dedicación y talento la llevaron a contribuir significativamente a la teoría nuclear, abriendo el camino para futuras investigadoras en un campo dominado por hombres. Maria Goeppert Mayer es un ejemplo inspirador de excelencia científica y perseverancia en la búsqueda del conocimiento.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maria-goeppert-mayer.jpg",
-    "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1972",
-      "birthPlace": "Kattowitz, Alemania",
-      "mainField": "Física"
+    "id": "minerva_mcgonagall",
+    "name": "Minerva McGonagall",
+    "shortDescription": "Directora de Gryffindor",
+    "description": "Minerva McGonagall es una bruja escocesa reconocida por su dedicación a la enseñanza y su firme lealtad a Albus Dumbledore. Como profesora de Transformaciones en Hogwarts, despierta respeto y admiración entre sus estudiantes. Su papel en la lucha contra Voldemort es fundamental, siendo miembro destacado de la Orden del Fénix. Además, asume el cargo de directora de la casa Gryffindor con devoción y justicia, guiando a las nuevas generaciones con sabiduría y coraje. A lo largo de su vida, Minerva McGonagall demuestra ser una figura ejemplar de integridad, fortaleza y compasión. ",
+    "imageUrl": "https://media.harrypotterfanzone.com/professor-mcgonagall-enjoys-a-drink.jpg",
+    "facts": { 
+      "casaDeOrigen": "Gryffindor",
+      "raza": "sangreMestiza",
+      "yearOfBirth": "1935"
     },
-    "extraInfo": {
-      "imageSource": "https://www.wsemexhibit.org/maria-goeppert-mayer.html"
-    }
+   
   },
   {
-    "id": "lise-meitner",
-    "name": "Lise Meitner",
-    "shortDescription": "Física nuclear, contribuyó a la teoría de la fisión nuclear.",
-    "description": "Física austriaca-sueca, dejó un legado imborrable en la física nuclear y la radioquímica. A pesar de enfrentar obstáculos de género en una era dominada por hombres, colaboró con Otto Hahn en el descubrimiento de la fisión nuclear, un avance revolucionario. Aunque no compartió el Premio Nobel por este logro, su contribución fue crucial para comprender la energía nuclear y la física de partículas. Su determinación y pasión por la ciencia han inspirado a generaciones de científicas. Lise Meitner es un símbolo perdurable de la perseverancia femenina y el impacto duradero que las mujeres pueden tener en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/lise-meitner.jpg",
+    "id": "Alastor_Moody",
+    "name": "Alastor 'Ojoloco' Moody",
+    "shortDescription": "Auror y miembro de la Orden del Fénix",
+    "description": "Alastor 'Ojoloco' Moody es una leyenda entre los aurors, conocido por su implacable persecución a los seguidores de Voldemort. Su ojo mágico, capaz de ver a través de las capas de invisibilidad y detectar engaños, lo convierte en un adversario temible para los magos oscuros. A pesar de su aspecto rudo y su reputación intimidante, Moody es un aliado valioso en la lucha contra las fuerzas del mal, enseñando a las generaciones jóvenes a enfrentar las artes oscuras con determinación y astucia",
+    "imageUrl": "https://pm1.aminoapps.com/6628/ecfe1e0d9316c58d1547951992a8251da01ecc4a_00.jpg",
     "facts": {
-      "yearOfBirth": "1878",
-      "yearOfDeath": "1968",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Física"
+      "casaDeOrigen": "noTienenCasa",
+      "raza": "sangrePura",
+      "yearOfBirth": "1940"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/lise-meitner-in-nuclear-physics-lab-in-19502c-retro/651196e6bbcb4009950e9955c2199760"
-    }
   },
   {
-    "id": "sau-lan-wu",
-    "name": "Sau Lan Wu",
-    "shortDescription": "Física de partículas, contribuyó a experimentos clave en física de alta energía.",
-    "description": "Física experimental sinoamericana, ha sido una fuerza motriz en la física de partículas. Destacó en experimentos en el CERN y lideró investigaciones cruciales, como el descubrimiento del quark c, que expandieron nuestro entendimiento de la estructura fundamental de la materia. Wu superó desafíos en una disciplina dominada por hombres y ha sido un faro de inspiración para científicas de todo el mundo. Sau Lan Wu es un ejemplo de excelencia científica y de cómo las mujeres pueden dejar huella en la investigación de vanguardia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sau-lan-wu.jpg",
-    "facts": {
-      "yearOfBirth": "1940",
-      "birthPlace": "Hong Kong, China",
-      "mainField": "Física de Partículas"
+    "id": "dobby",
+      "name": "Dobby",
+      "shortDescription": "El elfo doméstico leal a Harry Potter",
+      "description": "Dobby es un elfo doméstico excepcional, conocido por su lealtad inquebrantable a Harry Potter y su valentía para desafiar las convenciones de su propia especie. Después de ser liberado por Harry, Dobby sirve a menudo como un consejero y protector del joven mago, sacrificando su propia seguridad para salvar a sus amigos. Su devoción y sacrificio lo convierten en un ejemplo de coraje y bondad en un mundo lleno de adversidad y prejuicios. El legado de Dobby perdura más allá de su trágica muerte, recordándonos la importancia de la empatía, la valentía y la lucha por la libertad.",
+      "imageUrl": "https://blogstudio.s3.amazonaws.com/retrostyler/81862ff850bbc06df3e7cd622083f52f.jpg",
+      "facts": {
+        "casaDeOrigen": "noTienenCasa",
+        "raza": "sangreDeElfo",
+        "yearOfBirth": "1978"
     },
-    "extraInfo": {
-      "imageSource": "https://repository.aip.org/islandora/object/nbla%3A315195"
-    }
   },
   {
-    "id": "jocelyn-bell-burnell",
-    "name": "Jocelyn Bell Burnell",
-    "shortDescription": "Astrónoma y astrofísica, co-descubridora de los púlsares.",
-    "description": "Astrofísica británica, es una figura extraordinaria en la ciencia. Durante su doctorado, hizo un descubrimiento revolucionario al detectar los primeros púlsares, estrellas de neutrones altamente magnetizadas que emiten pulsos regulares de radiación. A pesar de que su asesor recibió el Premio Nobel por este descubrimiento, Bell Burnell se ha convertido en un símbolo de perseverancia y contribución de las mujeres a la astronomía. Su carrera distinguida y su activismo en favor de la diversidad de género en la ciencia han inspirado a generaciones futuras de científicas. Jocelyn Bell Burnell es un ejemplo de valentía y excelencia científica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/jocelyn-bell-burnell.jpg",
+    "id": "Molly_Weasley",
+    "name": "Molly Weasley",
+    "shortDescription": "Madre cariñosa y miembro de la Orden del Fénix",
+    "description": "Molly Weasley es una bruja notablemente talentosa y amorosa, conocida por su naturaleza maternal y su habilidad para cuidar de su numerosa familia. Es una figura respetada dentro de la comunidad mágica, especialmente por su papel en la lucha contra Lord Voldemort como miembro activo de la Orden del Fénix. A lo largo de los años, ha demostrado ser una hechicera formidable y una protectora feroz de sus seres queridos, dispuesta a enfrentarse a cualquier amenaza para mantenerlos a salvo.",
+    "imageUrl": "https://sm.ign.com/ign_latam/screenshot/default/molly_z45e.jpg",
     "facts": {
-      "yearOfBirth": "1943",
-      "birthPlace": "Belfast, Reino Unido",
-      "mainField": "Astronomía, Astrofísica"
+      "casaDeOrigen": "gryffindor",
+      "raza": "sangrePura",
+      "yearOfBirth": "1949"
     },
-    "extraInfo": {
-      "imageSource": "https://womeninscienceweadmire.icfo.eu/wiswa-2/jocelyn-bell/"
-    }
+    
   },
   {
-    "id": "dorothy-crowfoot-hodgkin",
-    "name": "Dorothy Crowfoot Hodgkin",
-    "shortDescription": "Química, ganadora del Premio Nobel de Química.",
-    "description": "Química británica, es una figura icónica en la ciencia que superó las barreras de género de su época. Su trabajo revolucionario en la cristalografía de rayos X permitió determinar la estructura de importantes biomoléculas, como la penicilina, la vitamina B12 y la insulina. Fue galardonada con el Premio Nobel de Química en 1964, siendo la tercera mujer en recibir este prestigioso reconocimiento. Hodgkin no solo fue una científica excepcional, sino también una defensora de la igualdad de género en la ciencia, allanando el camino para futuras generaciones de científicas y dejando un legado duradero en la investigación y la equidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/dorothy-crowfoot-hodgkin.jpg",
+    "id": "Arthur_Weasle",
+    "name": "Arthur Weasley",
+    "shortDescription": "Padre de los hijos Weasley",
+    "description": "Arthur Weasley es un entusiasta de la cultura muggle y un padre amoroso. Trabaja en el Ministerio de Magia en el Departamento de Regulación y Control de Criaturas Mágicas. Su fascinación por los objetos muggles a menudo lo mete en problemas, pero su corazón amable y su dedicación a su familia son innegables. Arthur es conocido por su naturaleza curiosa y su ingenio, lo que lo convierte en un miembro valioso de la comunidad mágica, tanto en su hogar como en su trabajo.",
+    "imageUrl": "https://www.moviemaniauk.co.uk/assets/arthur-weasley.jpg",
     "facts": {
-      "yearOfBirth": "1910",
-      "yearOfDeath": "1994",
-      "birthPlace": "El Cairo, Egipto / Shipston-on-Stour, Reino Unido",
-      "mainField": "Química"
+      "casaDeOrigen": "gryffindor",
+      "raza": "sangrePura",
+      "yearOfBirth": "1950"
     },
-    "extraInfo": {
-      "imageSource": "https://www.some.ox.ac.uk/news/jan-royall-why-we-must-champion-dorothy-hodgkin-for-the-50-note/"
-    }
+    
   },
   {
-    "id": "marie-curie",
-    "name": "Marie Curie",
-    "shortDescription": "Física y química, ganadora de dos Premios Nobel.",
-    "description": "física y química de origen polaco y nacionalizada francesa, es una de las figuras más icónicas en la historia de la ciencia. Ganadora de dos premios Nobel (Física en 1903 y Química en 1911), Curie realizó investigaciones fundamentales sobre la radiactividad y el descubrimiento de los elementos radio y polonio. Su dedicación y valentía en la investigación científica, a pesar de los desafíos de la discriminación de género y los riesgos de la radiación, la convierten en un modelo a seguir para científicas de todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marie-curie.jpg",
+    "id": "Nymphadora_Tonks",
+    "name": "Nymphadora Tonks",
+    "shortDescription": "Auror y Metamorfomaga",
+    "description": "Nymphadora Tonks, conocida como Tonks, es una bruja llena de energía y valentía. Como metamorfomaga, tiene la habilidad única de cambiar su apariencia a voluntad, lo que la convierte en una auror excepcionalmente talentosa. Su naturaleza juguetona y su disposición amistosa la hacen popular entre sus colegas y amigos. A pesar de su espíritu alegre, Tonks es una luchadora feroz en la batalla, comprometida con la lucha contra los seguidores de Lord Voldemort y la plena protección del mundo mágico.",
+    "imageUrl": "https://wallpapercave.com/wp/wp8416833.jpg",
     "facts": {
-      "yearOfBirth": "1867",
-      "yearOfDeath": "1934",
-      "birthPlace": "Varsovia, Polonia",
-      "mainField": "Física y Química"
+      "casaDeOrigen": "hufflepuff",
+      "raza": "sangrePura",
+      "yearOfBirth": "1973"
     },
-    "extraInfo": {
-      "imageSource": "https://www.historyextra.com/period/first-world-war/life-of-the-week-marie-curie/"
-    }
   },
   {
-    "id": "marjory-stephenson",
-    "name": "Marjory Stephenson",
-    "shortDescription": "Microbióloga y bioquímica, investigó en enzimología.",
-    "description": "Bioquímica británica, brilló como científica en una época en la que las mujeres enfrentaban obstáculos muy significativos en la investigación científica. Su trabajo pionero en microbiología, enzimología y bioquímica contribuyó al entendimiento de procesos fundamentales en la vida. Fue una de las primeras mujeres en ser elegida miembro de la Royal Society, un reconocimiento a su destacada contribución a la ciencia. Además, fue una mentora y defensora de las mujeres en la ciencia, inspirando y allanando el camino para futuras generaciones.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjory-stephenson.jpg",
+    "id": "Filius_Flitwick",
+    "name": "Filius Flitwick",
+    "shortDescription": "Encantador profesor de Encantamientos",
+    "description": "Filius Flitwick es un mago de pequeña estatura pero con un gran corazón y una habilidad excepcional en los encantamientos. Como maestro de Encantamientos en Hogwarts, Flitwick ha enseñado a varias generaciones de estudiantes la magia de conjurar hechizos y encantamientos. Además, es el jefe de la casa Ravenclaw, donde promueve la sabiduría, la creatividad y el ingenio. Aunque a menudo es subestimado por su apariencia física, Flitwick demuestra continuamente su valía como mago y su compromiso con la educación mágica.",
+    "imageUrl": "https://s3.amazonaws.com/bit-photos/large/3730076.jpeg",
     "facts": {
-      "yearOfBirth": "1885",
-      "yearOfDeath": "1948",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Microbiología, Bioquímica"
+      "casaDeOrigen": "ravenclaw",
+      "raza": "sangreDeElfo",
+      "yearOfBirth": "1958"
     },
-    "extraInfo": {
-      "imageSource": "https://microbiologysociety.org/grants-prizes/all-prizes-and-competitions-/prize-lectures/marjory-stephenson-prize-lecture/marjory-stephenson-a-short-history.html"
-    }
+   
   },
   {
-    "id": "rosalind-franklin",
-    "name": "Rosalind Franklin",
-    "shortDescription": "Química y cristalógrafa, contribuyó a la comprensión de la estructura del ADN.",
-    "description": "Química y cristalógrafa británica, destacó en un campo dominado por hombres y su contribución a la ciencia es innegable. Sus investigaciones pioneras en la cristalografía de rayos X fueron fundamentales para revelar la estructura del ADN en forma de doble hélice, un hito crucial en la biología molecular. A pesar de que su trabajo inicial fue subestimado, su determinación y habilidad científica allanaron el camino para futuros avances en genética y biología. Franklin es un ejemplo inspirador de cómo las mujeres pueden sobresalir en la ciencia, dejando un legado duradero en la investigación y la igualdad de género.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/rosalind-franklin.jpg",
+    "id": "Dolores_Umbridge",
+    "name": "Dolores Umbridge",
+    "shortDescription": "Inquisidora del Ministerio de Magia",
+    "description": "Dolores Umbridge es una bruja infame conocida por su autoritarismo y su intolerancia hacia los no muggles. Desempeñó el papel de Alta Inquisidora de Hogwarts durante el mandato de Cornelius Fudge como Ministro de Magia, imponiendo regulaciones estrictas y castigos crueles a los estudiantes. Posteriormente, usurpó el cargo de Ministra de Magia interina, llevando a cabo una represión severa contra los disidentes y muggleborns. Su lealtad fanática al régimen la convierte en una figura temida y odiada dentro de la comunidad mágica.",
+    "imageUrl": "https://www.the-leaky-cauldron.org/wp-content/uploads/assets/Umbridge-dolores-jane-umbridge-33770441-1024-768.jpg",
     "facts": {
-      "yearOfBirth": "1920",
-      "yearOfDeath": "1958",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Cristalografía"
+      "casaDeOrigen": "slytherin",
+      "raza": "sangreMestiza",
+      "yearOfBirth": "1965"
     },
-    "extraInfo": {
-      "imageSource": ""
-    }
   }
 ];
